@@ -16,3 +16,12 @@ D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\Equipment.xml
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_Main.resources
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.Resources.resources
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.vbproj.GenerateResource.Cache
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\bin\Debug\Equipment.exe
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\bin\Debug\Equipment.pdb
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\bin\Debug\Equipment.xml
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_Main.resources
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.Resources.resources
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.vbproj.GenerateResource.Cache
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.exe
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.xml
+D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.pdb
