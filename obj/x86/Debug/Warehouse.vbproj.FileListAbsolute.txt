@@ -1,0 +1,9 @@
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\bin\Debug\Warehouse.exe
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\bin\Debug\Warehouse.pdb
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\bin\Debug\Warehouse.xml
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\warehouse.frm_Main.resources
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\warehouse.Resources.resources
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Warehouse.vbproj.GenerateResource.Cache
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Warehouse.exe
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Warehouse.xml
+D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Warehouse.pdb
