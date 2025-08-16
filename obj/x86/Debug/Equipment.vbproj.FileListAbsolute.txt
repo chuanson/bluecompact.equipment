@@ -25,3 +25,5 @@ D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equi
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.exe
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.xml
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.pdb
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_ItemFind.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.usercon_equipment.resources
