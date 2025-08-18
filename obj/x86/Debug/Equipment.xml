@@ -43,7 +43,15 @@ Equipment
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Equipment.My.Resources.Resources.config_material">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Equipment.My.Resources.Resources.config_measu_unit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Equipment.My.Resources.Resources.config_measu_unit2">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

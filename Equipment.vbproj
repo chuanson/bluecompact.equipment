@@ -91,25 +91,25 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Section\Equipment\frm_ItemFind.Designer.vb">
-      <DependentUpon>frm_ItemFind.vb</DependentUpon>
+    <Compile Include="Section\Equipment\usercon_add_equipment.Designer.vb">
+      <DependentUpon>usercon_add_equipment.vb</DependentUpon>
     </Compile>
-    <Compile Include="Section\Equipment\frm_ItemFind.vb">
-      <SubType>Form</SubType>
+    <Compile Include="Section\Equipment\usercon_add_equipment.vb">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Section\Equipment\usercon_equipment.Designer.vb">
-      <DependentUpon>usercon_equipment.vb</DependentUpon>
+    <Compile Include="Section\Equipment\usercon_find_equipment.Designer.vb">
+      <DependentUpon>usercon_find_equipment.vb</DependentUpon>
     </Compile>
-    <Compile Include="Section\Equipment\usercon_equipment.vb">
+    <Compile Include="Section\Equipment\usercon_find_equipment.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
@@ -118,16 +118,16 @@
       <DependentUpon>frm_Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section\Equipment\frm_ItemFind.resx">
-      <DependentUpon>frm_ItemFind.vb</DependentUpon>
+    <EmbeddedResource Include="Section\Equipment\usercon_add_equipment.resx">
+      <DependentUpon>usercon_add_equipment.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section\Equipment\usercon_equipment.resx">
-      <DependentUpon>usercon_equipment.vb</DependentUpon>
+    <EmbeddedResource Include="Section\Equipment\usercon_find_equipment.resx">
+      <DependentUpon>usercon_find_equipment.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -236,6 +236,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="equipment.ico" />
+    <None Include="Icon\Ribbon\config_material.png" />
+    <None Include="Icon\Ribbon\config_measu_unit2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

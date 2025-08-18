@@ -7,15 +7,6 @@ D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Equipment.vbp
 D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Equipment.exe
 D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Equipment.xml
 D:\Drive\Itme\Software\Project\bluecompact.warehouse\obj\x86\Debug\Equipment.pdb
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.exe
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.xml
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.pdb
-D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\Equipment.exe
-D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\Equipment.pdb
-D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\Equipment.xml
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_Main.resources
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.Resources.resources
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.vbproj.GenerateResource.Cache
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\bin\Debug\Equipment.exe
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\bin\Debug\Equipment.pdb
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\bin\Debug\Equipment.xml
@@ -25,5 +16,14 @@ D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equi
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.exe
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.xml
 D:\Work\Database Project\VB.NET\Project\bluecompact.equipment\obj\x86\Debug\Equipment.pdb
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_ItemFind.resources
-D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.usercon_equipment.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\Equipment.exe
+D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\Equipment.pdb
+D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\Equipment.xml
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_Main.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.vbproj.GenerateResource.Cache
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.exe
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.xml
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.pdb
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.Resources.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.usercon_add_equipment.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.usercon_find_equipment.resources

@@ -34,12 +34,12 @@ Partial Class frm_Main
         Me.RibbonBar2 = New DevComponents.DotNetBar.RibbonBar()
         Me.ItemContainer7 = New DevComponents.DotNetBar.ItemContainer()
         Me.RibbonBar1 = New DevComponents.DotNetBar.RibbonBar()
-        Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
-        Me.RibbonBar5 = New DevComponents.DotNetBar.RibbonBar()
         Me.RibbonPanel3 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar9 = New DevComponents.DotNetBar.RibbonBar()
         Me.RibbonBar8 = New DevComponents.DotNetBar.RibbonBar()
         Me.RibbonBar4 = New DevComponents.DotNetBar.RibbonBar()
+        Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
+        Me.RibbonBar5 = New DevComponents.DotNetBar.RibbonBar()
         Me.RibbonTabItem1 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.RibbonTabItem2 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.RibbonTabItem3 = New DevComponents.DotNetBar.RibbonTabItem()
@@ -62,6 +62,7 @@ Partial Class frm_Main
         Me.ButtonItem34 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem33 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem35 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem37 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem38 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem21 = New DevComponents.DotNetBar.ButtonItem()
@@ -78,9 +79,8 @@ Partial Class frm_Main
         Me.ButtonItem46 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem47 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem48 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem15 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem2 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem32 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem14 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem27 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem29 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem28 = New DevComponents.DotNetBar.ButtonItem()
@@ -93,8 +93,8 @@ Partial Class frm_Main
         Me.ButtonItem24 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonControl1.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
-        Me.RibbonPanel2.SuspendLayout()
         Me.RibbonPanel3.SuspendLayout()
+        Me.RibbonPanel2.SuspendLayout()
         CType(Me.bar_StatusInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tabcontrol_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabcontrol_Main.SuspendLayout()
@@ -111,8 +111,8 @@ Partial Class frm_Main
         Me.RibbonControl1.CaptionFont = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.RibbonControl1.CaptionVisible = True
         Me.RibbonControl1.Controls.Add(Me.RibbonPanel1)
-        Me.RibbonControl1.Controls.Add(Me.RibbonPanel3)
         Me.RibbonControl1.Controls.Add(Me.RibbonPanel2)
+        Me.RibbonControl1.Controls.Add(Me.RibbonPanel3)
         Me.RibbonControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.RibbonControl1.ForeColor = System.Drawing.Color.Black
         Me.RibbonControl1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.RibbonTabItem1, Me.RibbonTabItem2, Me.RibbonTabItem3, Me.LabelItem2})
@@ -185,7 +185,7 @@ Partial Class frm_Main
         Me.RibbonBar7.DragDropSupport = True
         Me.RibbonBar7.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem39, Me.ButtonItem1})
         Me.RibbonBar7.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
-        Me.RibbonBar7.Location = New System.Drawing.Point(994, 0)
+        Me.RibbonBar7.Location = New System.Drawing.Point(919, 0)
         Me.RibbonBar7.Name = "RibbonBar7"
         Me.RibbonBar7.Size = New System.Drawing.Size(140, 115)
         Me.RibbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -216,9 +216,9 @@ Partial Class frm_Main
         Me.RibbonBar6.DragDropSupport = True
         Me.RibbonBar6.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem18, Me.ButtonItem25, Me.ItemContainer5, Me.ItemContainer6})
         Me.RibbonBar6.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
-        Me.RibbonBar6.Location = New System.Drawing.Point(639, 0)
+        Me.RibbonBar6.Location = New System.Drawing.Point(565, 0)
         Me.RibbonBar6.Name = "RibbonBar6"
-        Me.RibbonBar6.Size = New System.Drawing.Size(355, 115)
+        Me.RibbonBar6.Size = New System.Drawing.Size(354, 115)
         Me.RibbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar6.TabIndex = 10
         Me.RibbonBar6.Text = "กำหนดค่า"
@@ -255,7 +255,7 @@ Partial Class frm_Main
         Me.ItemContainer6.ItemSpacing = 3
         Me.ItemContainer6.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical
         Me.ItemContainer6.Name = "ItemContainer6"
-        Me.ItemContainer6.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem37, Me.ButtonItem38})
+        Me.ItemContainer6.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem3, Me.ButtonItem37, Me.ButtonItem38})
         '
         '
         '
@@ -277,7 +277,7 @@ Partial Class frm_Main
         Me.RibbonBar3.DragDropSupport = True
         Me.RibbonBar3.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem20, Me.ButtonItem16})
         Me.RibbonBar3.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
-        Me.RibbonBar3.Location = New System.Drawing.Point(504, 0)
+        Me.RibbonBar3.Location = New System.Drawing.Point(430, 0)
         Me.RibbonBar3.Name = "RibbonBar3"
         Me.RibbonBar3.Size = New System.Drawing.Size(135, 115)
         Me.RibbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -308,7 +308,7 @@ Partial Class frm_Main
         Me.RibbonBar2.DragDropSupport = True
         Me.RibbonBar2.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem19, Me.ButtonItem17, Me.ButtonItem42, Me.ItemContainer7})
         Me.RibbonBar2.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
-        Me.RibbonBar2.Location = New System.Drawing.Point(205, 0)
+        Me.RibbonBar2.Location = New System.Drawing.Point(131, 0)
         Me.RibbonBar2.Name = "RibbonBar2"
         Me.RibbonBar2.Size = New System.Drawing.Size(299, 115)
         Me.RibbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -352,11 +352,11 @@ Partial Class frm_Main
         Me.RibbonBar1.ContainerControlProcessDialogKey = True
         Me.RibbonBar1.Dock = System.Windows.Forms.DockStyle.Left
         Me.RibbonBar1.DragDropSupport = True
-        Me.RibbonBar1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem15, Me.ButtonItem32, Me.ButtonItem14})
+        Me.RibbonBar1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem2, Me.ButtonItem32})
         Me.RibbonBar1.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar1.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar1.Name = "RibbonBar1"
-        Me.RibbonBar1.Size = New System.Drawing.Size(202, 115)
+        Me.RibbonBar1.Size = New System.Drawing.Size(128, 115)
         Me.RibbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar1.TabIndex = 0
         Me.RibbonBar1.Text = "รายการ"
@@ -369,61 +369,6 @@ Partial Class frm_Main
         '
         Me.RibbonBar1.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
-        'RibbonPanel2
-        '
-        Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonPanel2.Controls.Add(Me.RibbonBar5)
-        Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 53)
-        Me.RibbonPanel2.Name = "RibbonPanel2"
-        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
-        Me.RibbonPanel2.Size = New System.Drawing.Size(1212, 117)
-        '
-        '
-        '
-        Me.RibbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonPanel2.TabIndex = 2
-        Me.RibbonPanel2.Visible = False
-        '
-        'RibbonBar5
-        '
-        Me.RibbonBar5.AutoOverflowEnabled = True
-        '
-        '
-        '
-        Me.RibbonBar5.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar5.ContainerControlProcessDialogKey = True
-        Me.RibbonBar5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar5.DragDropSupport = True
-        Me.RibbonBar5.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem27, Me.ButtonItem29, Me.ButtonItem28, Me.ButtonItem30, Me.ButtonItem31})
-        Me.RibbonBar5.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
-        Me.RibbonBar5.Location = New System.Drawing.Point(3, 0)
-        Me.RibbonBar5.Name = "RibbonBar5"
-        Me.RibbonBar5.Size = New System.Drawing.Size(405, 115)
-        Me.RibbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar5.TabIndex = 0
-        Me.RibbonBar5.Text = "รายงาน"
-        '
-        '
-        '
-        Me.RibbonBar5.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar5.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
         'RibbonPanel3
         '
         Me.RibbonPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -431,10 +376,10 @@ Partial Class frm_Main
         Me.RibbonPanel3.Controls.Add(Me.RibbonBar8)
         Me.RibbonPanel3.Controls.Add(Me.RibbonBar4)
         Me.RibbonPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel3.Location = New System.Drawing.Point(0, 53)
+        Me.RibbonPanel3.Location = New System.Drawing.Point(0, 0)
         Me.RibbonPanel3.Name = "RibbonPanel3"
         Me.RibbonPanel3.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
-        Me.RibbonPanel3.Size = New System.Drawing.Size(1212, 117)
+        Me.RibbonPanel3.Size = New System.Drawing.Size(1212, 170)
         '
         '
         '
@@ -468,7 +413,7 @@ Partial Class frm_Main
         Me.RibbonBar9.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar9.Location = New System.Drawing.Point(287, 0)
         Me.RibbonBar9.Name = "RibbonBar9"
-        Me.RibbonBar9.Size = New System.Drawing.Size(64, 115)
+        Me.RibbonBar9.Size = New System.Drawing.Size(64, 168)
         Me.RibbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar9.TabIndex = 2
         Me.RibbonBar9.Text = "ช่วยเหลือ"
@@ -499,7 +444,7 @@ Partial Class frm_Main
         Me.RibbonBar8.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar8.Location = New System.Drawing.Point(154, 0)
         Me.RibbonBar8.Name = "RibbonBar8"
-        Me.RibbonBar8.Size = New System.Drawing.Size(133, 115)
+        Me.RibbonBar8.Size = New System.Drawing.Size(133, 168)
         Me.RibbonBar8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar8.TabIndex = 1
         Me.RibbonBar8.Text = "ฐานข้อมูล"
@@ -530,7 +475,7 @@ Partial Class frm_Main
         Me.RibbonBar4.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar4.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar4.Name = "RibbonBar4"
-        Me.RibbonBar4.Size = New System.Drawing.Size(151, 115)
+        Me.RibbonBar4.Size = New System.Drawing.Size(151, 168)
         Me.RibbonBar4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar4.TabIndex = 0
         Me.RibbonBar4.Text = "ระบบ"
@@ -542,6 +487,61 @@ Partial Class frm_Main
         '
         '
         Me.RibbonBar4.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'RibbonPanel2
+        '
+        Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonPanel2.Controls.Add(Me.RibbonBar5)
+        Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonPanel2.Name = "RibbonPanel2"
+        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
+        Me.RibbonPanel2.Size = New System.Drawing.Size(1212, 170)
+        '
+        '
+        '
+        Me.RibbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonPanel2.TabIndex = 2
+        Me.RibbonPanel2.Visible = False
+        '
+        'RibbonBar5
+        '
+        Me.RibbonBar5.AutoOverflowEnabled = True
+        '
+        '
+        '
+        Me.RibbonBar5.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar5.ContainerControlProcessDialogKey = True
+        Me.RibbonBar5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar5.DragDropSupport = True
+        Me.RibbonBar5.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem27, Me.ButtonItem29, Me.ButtonItem28, Me.ButtonItem30, Me.ButtonItem31})
+        Me.RibbonBar5.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
+        Me.RibbonBar5.Location = New System.Drawing.Point(3, 0)
+        Me.RibbonBar5.Name = "RibbonBar5"
+        Me.RibbonBar5.Size = New System.Drawing.Size(405, 168)
+        Me.RibbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar5.TabIndex = 0
+        Me.RibbonBar5.Text = "รายงาน"
+        '
+        '
+        '
+        Me.RibbonBar5.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar5.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
         'RibbonTabItem1
         '
@@ -576,8 +576,8 @@ Partial Class frm_Main
         '
         'StyleManager1
         '
-        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(179, Byte), Integer)))
+        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'bar_StatusInfo
         '
@@ -654,9 +654,9 @@ Partial Class frm_Main
         Me.TabControlPanel_Dashboard.Name = "TabControlPanel_Dashboard"
         Me.TabControlPanel_Dashboard.Padding = New System.Windows.Forms.Padding(1)
         Me.TabControlPanel_Dashboard.Size = New System.Drawing.Size(1212, 400)
-        Me.TabControlPanel_Dashboard.Style.BackColor1.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TabControlPanel_Dashboard.Style.BackColor1.Color = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.TabControlPanel_Dashboard.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
-        Me.TabControlPanel_Dashboard.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.TabControlPanel_Dashboard.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
         Me.TabControlPanel_Dashboard.Style.BorderSide = CType(((DevComponents.DotNetBar.eBorderSide.Left Or DevComponents.DotNetBar.eBorderSide.Right) _
                     Or DevComponents.DotNetBar.eBorderSide.Bottom), DevComponents.DotNetBar.eBorderSide)
         Me.TabControlPanel_Dashboard.Style.GradientAngle = 90
@@ -715,7 +715,7 @@ Partial Class frm_Main
         Me.ButtonItem33.Image = Global.Equipment.My.Resources.Resources.config_category
         Me.ButtonItem33.ImagePaddingHorizontal = 15
         Me.ButtonItem33.Name = "ButtonItem33"
-        Me.ButtonItem33.Text = "หมวดหมู่รายการ"
+        Me.ButtonItem33.Text = "หมวดหมู่หลัก"
         '
         'ButtonItem35
         '
@@ -723,7 +723,15 @@ Partial Class frm_Main
         Me.ButtonItem35.Image = Global.Equipment.My.Resources.Resources.config_group
         Me.ButtonItem35.ImagePaddingHorizontal = 15
         Me.ButtonItem35.Name = "ButtonItem35"
-        Me.ButtonItem35.Text = "กลุ่มรายการ"
+        Me.ButtonItem35.Text = "หมวดหมู่ย่อย"
+        '
+        'ButtonItem3
+        '
+        Me.ButtonItem3.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem3.Image = Global.Equipment.My.Resources.Resources.config_material
+        Me.ButtonItem3.ImagePaddingHorizontal = 15
+        Me.ButtonItem3.Name = "ButtonItem3"
+        Me.ButtonItem3.Text = "คุณสมบัติ/วัสดุ"
         '
         'ButtonItem37
         '
@@ -737,7 +745,7 @@ Partial Class frm_Main
         '
         Me.ButtonItem38.AutoExpandOnClick = True
         Me.ButtonItem38.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem38.Image = Global.Equipment.My.Resources.Resources.config_measu_unit
+        Me.ButtonItem38.Image = Global.Equipment.My.Resources.Resources.config_measu_unit2
         Me.ButtonItem38.ImagePaddingHorizontal = 15
         Me.ButtonItem38.Name = "ButtonItem38"
         Me.ButtonItem38.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem21, Me.ButtonItem22})
@@ -840,13 +848,13 @@ Partial Class frm_Main
         Me.ButtonItem48.Name = "ButtonItem48"
         Me.ButtonItem48.Text = "ประวัติการโอนย้าย"
         '
-        'ButtonItem15
+        'ButtonItem2
         '
-        Me.ButtonItem15.Image = Global.Equipment.My.Resources.Resources.add_item
-        Me.ButtonItem15.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem15.Name = "ButtonItem15"
-        Me.ButtonItem15.SubItemsExpandWidth = 14
-        Me.ButtonItem15.Text = "เพิ่ม" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการใหม่"
+        Me.ButtonItem2.Image = Global.Equipment.My.Resources.Resources.add_item
+        Me.ButtonItem2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem2.Name = "ButtonItem2"
+        Me.ButtonItem2.SubItemsExpandWidth = 14
+        Me.ButtonItem2.Text = "เพิ่ม" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการใหม่"
         '
         'ButtonItem32
         '
@@ -855,14 +863,6 @@ Partial Class frm_Main
         Me.ButtonItem32.Name = "ButtonItem32"
         Me.ButtonItem32.SubItemsExpandWidth = 14
         Me.ButtonItem32.Text = "ค้นหา" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
-        '
-        'ButtonItem14
-        '
-        Me.ButtonItem14.Image = Global.Equipment.My.Resources.Resources.item
-        Me.ButtonItem14.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem14.Name = "ButtonItem14"
-        Me.ButtonItem14.SubItemsExpandWidth = 14
-        Me.ButtonItem14.Text = "แสดงรายการ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ทั้งหมด"
         '
         'ButtonItem27
         '
@@ -882,7 +882,7 @@ Partial Class frm_Main
         '
         'ButtonItem28
         '
-        Me.ButtonItem28.Image = Global.Equipment.My.Resources.Resources.report_purple
+        Me.ButtonItem28.Image = Global.Equipment.My.Resources.Resources.report_green
         Me.ButtonItem28.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.ButtonItem28.Name = "ButtonItem28"
         Me.ButtonItem28.SubItemsExpandWidth = 14
@@ -890,7 +890,7 @@ Partial Class frm_Main
         '
         'ButtonItem30
         '
-        Me.ButtonItem30.Image = Global.Equipment.My.Resources.Resources.report_green
+        Me.ButtonItem30.Image = Global.Equipment.My.Resources.Resources.report_purple
         Me.ButtonItem30.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.ButtonItem30.Name = "ButtonItem30"
         Me.ButtonItem30.SubItemsExpandWidth = 14
@@ -898,7 +898,7 @@ Partial Class frm_Main
         '
         'ButtonItem31
         '
-        Me.ButtonItem31.Image = Global.Equipment.My.Resources.Resources.report_green
+        Me.ButtonItem31.Image = Global.Equipment.My.Resources.Resources.report_purple
         Me.ButtonItem31.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
         Me.ButtonItem31.Name = "ButtonItem31"
         Me.ButtonItem31.SubItemsExpandWidth = 14
@@ -961,8 +961,8 @@ Partial Class frm_Main
         Me.RibbonControl1.ResumeLayout(False)
         Me.RibbonControl1.PerformLayout()
         Me.RibbonPanel1.ResumeLayout(False)
-        Me.RibbonPanel2.ResumeLayout(False)
         Me.RibbonPanel3.ResumeLayout(False)
+        Me.RibbonPanel2.ResumeLayout(False)
         CType(Me.bar_StatusInfo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tabcontrol_Main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabcontrol_Main.ResumeLayout(False)
@@ -979,8 +979,6 @@ Partial Class frm_Main
     Friend WithEvents RibbonPanel3 As DevComponents.DotNetBar.RibbonPanel
     Friend WithEvents RibbonTabItem3 As DevComponents.DotNetBar.RibbonTabItem
     Friend WithEvents RibbonBar2 As DevComponents.DotNetBar.RibbonBar
-    Friend WithEvents ButtonItem14 As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents ButtonItem15 As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents ButtonItem19 As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents ButtonItem17 As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents RibbonBar5 As DevComponents.DotNetBar.RibbonBar
@@ -1036,5 +1034,7 @@ Partial Class frm_Main
     Friend WithEvents tabcontrol_Main As DevComponents.DotNetBar.TabControl
     Friend WithEvents TabControlPanel_Dashboard As DevComponents.DotNetBar.TabControlPanel
     Friend WithEvents TabItem_Dashboard As DevComponents.DotNetBar.TabItem
+    Friend WithEvents ButtonItem2 As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem3 As DevComponents.DotNetBar.ButtonItem
 
 End Class
