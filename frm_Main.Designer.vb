@@ -27,19 +27,55 @@ Partial Class frm_Main
         Me.RibbonControl1 = New DevComponents.DotNetBar.RibbonControl()
         Me.RibbonPanel1 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar7 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem39 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar6 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem18 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem25 = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer5 = New DevComponents.DotNetBar.ItemContainer()
+        Me.ButtonItem34 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem33 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem35 = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer6 = New DevComponents.DotNetBar.ItemContainer()
+        Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem37 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem38 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem21 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem22 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar3 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem20 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem16 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar2 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem19 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem17 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem42 = New DevComponents.DotNetBar.ButtonItem()
         Me.ItemContainer7 = New DevComponents.DotNetBar.ItemContainer()
+        Me.ButtonItem41 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem40 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem44 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem45 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem46 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem47 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem48 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar1 = New DevComponents.DotNetBar.RibbonBar()
-        Me.RibbonPanel3 = New DevComponents.DotNetBar.RibbonPanel()
-        Me.RibbonBar9 = New DevComponents.DotNetBar.RibbonBar()
-        Me.RibbonBar8 = New DevComponents.DotNetBar.RibbonBar()
-        Me.RibbonBar4 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem2 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem32 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar5 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem27 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem29 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem28 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem30 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem31 = New DevComponents.DotNetBar.ButtonItem()
+        Me.RibbonPanel3 = New DevComponents.DotNetBar.RibbonPanel()
+        Me.RibbonBar9 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem26 = New DevComponents.DotNetBar.ButtonItem()
+        Me.RibbonBar8 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem36 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem43 = New DevComponents.DotNetBar.ButtonItem()
+        Me.RibbonBar4 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem23 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem24 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonTabItem1 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.RibbonTabItem2 = New DevComponents.DotNetBar.RibbonTabItem()
         Me.RibbonTabItem3 = New DevComponents.DotNetBar.RibbonTabItem()
@@ -55,46 +91,10 @@ Partial Class frm_Main
         Me.tabcontrol_Main = New DevComponents.DotNetBar.TabControl()
         Me.TabControlPanel_Dashboard = New DevComponents.DotNetBar.TabControlPanel()
         Me.TabItem_Dashboard = New DevComponents.DotNetBar.TabItem(Me.components)
-        Me.ButtonItem39 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem18 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem25 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem34 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem33 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem35 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem37 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem38 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem21 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem22 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem20 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem16 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem19 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem17 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem42 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem41 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem40 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem44 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem45 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem46 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem47 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem48 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem2 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem32 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem27 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem29 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem28 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem30 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem31 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem26 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem36 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem43 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem23 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem24 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonControl1.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
-        Me.RibbonPanel3.SuspendLayout()
         Me.RibbonPanel2.SuspendLayout()
+        Me.RibbonPanel3.SuspendLayout()
         CType(Me.bar_StatusInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tabcontrol_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabcontrol_Main.SuspendLayout()
@@ -200,6 +200,22 @@ Partial Class frm_Main
         '
         Me.RibbonBar7.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem39
+        '
+        Me.ButtonItem39.Image = Global.Equipment.My.Resources.Resources.user_edit
+        Me.ButtonItem39.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem39.Name = "ButtonItem39"
+        Me.ButtonItem39.SubItemsExpandWidth = 14
+        Me.ButtonItem39.Text = "แก้ไข" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ข้อมูลผู้ใช้"
+        '
+        'ButtonItem1
+        '
+        Me.ButtonItem1.Image = Global.Equipment.My.Resources.Resources.user_logout
+        Me.ButtonItem1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem1.Name = "ButtonItem1"
+        Me.ButtonItem1.SubItemsExpandWidth = 14
+        Me.ButtonItem1.Text = "ออกจากระบบ"
+        '
         'RibbonBar6
         '
         Me.RibbonBar6.AutoOverflowEnabled = True
@@ -231,6 +247,22 @@ Partial Class frm_Main
         '
         Me.RibbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem18
+        '
+        Me.ButtonItem18.Image = Global.Equipment.My.Resources.Resources.warehouse_change
+        Me.ButtonItem18.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem18.Name = "ButtonItem18"
+        Me.ButtonItem18.SubItemsExpandWidth = 14
+        Me.ButtonItem18.Text = "เปลี่ยนคลัง"
+        '
+        'ButtonItem25
+        '
+        Me.ButtonItem25.Image = Global.Equipment.My.Resources.Resources.warehouse_config
+        Me.ButtonItem25.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem25.Name = "ButtonItem25"
+        Me.ButtonItem25.SubItemsExpandWidth = 14
+        Me.ButtonItem25.Text = "ตั้งค่าคลัง"
+        '
         'ItemContainer5
         '
         '
@@ -246,6 +278,30 @@ Partial Class frm_Main
         '
         Me.ItemContainer5.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem34
+        '
+        Me.ButtonItem34.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem34.Image = Global.Equipment.My.Resources.Resources.config_location
+        Me.ButtonItem34.ImagePaddingHorizontal = 15
+        Me.ButtonItem34.Name = "ButtonItem34"
+        Me.ButtonItem34.Text = "สถานที่จัดเก็บ"
+        '
+        'ButtonItem33
+        '
+        Me.ButtonItem33.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem33.Image = Global.Equipment.My.Resources.Resources.config_category
+        Me.ButtonItem33.ImagePaddingHorizontal = 15
+        Me.ButtonItem33.Name = "ButtonItem33"
+        Me.ButtonItem33.Text = "หมวดหมู่หลัก"
+        '
+        'ButtonItem35
+        '
+        Me.ButtonItem35.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem35.Image = Global.Equipment.My.Resources.Resources.config_group
+        Me.ButtonItem35.ImagePaddingHorizontal = 15
+        Me.ButtonItem35.Name = "ButtonItem35"
+        Me.ButtonItem35.Text = "หมวดหมู่ย่อย"
+        '
         'ItemContainer6
         '
         '
@@ -260,6 +316,42 @@ Partial Class frm_Main
         '
         '
         Me.ItemContainer6.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem3
+        '
+        Me.ButtonItem3.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem3.Image = Global.Equipment.My.Resources.Resources.config_material
+        Me.ButtonItem3.ImagePaddingHorizontal = 15
+        Me.ButtonItem3.Name = "ButtonItem3"
+        Me.ButtonItem3.Text = "คุณสมบัติ/วัสดุ"
+        '
+        'ButtonItem37
+        '
+        Me.ButtonItem37.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem37.Image = Global.Equipment.My.Resources.Resources.config_supplier
+        Me.ButtonItem37.ImagePaddingHorizontal = 15
+        Me.ButtonItem37.Name = "ButtonItem37"
+        Me.ButtonItem37.Text = "ผู้ผลิต/ผู้จำหน่าย"
+        '
+        'ButtonItem38
+        '
+        Me.ButtonItem38.AutoExpandOnClick = True
+        Me.ButtonItem38.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem38.Image = Global.Equipment.My.Resources.Resources.config_measu_unit2
+        Me.ButtonItem38.ImagePaddingHorizontal = 15
+        Me.ButtonItem38.Name = "ButtonItem38"
+        Me.ButtonItem38.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem21, Me.ButtonItem22})
+        Me.ButtonItem38.Text = "หน่วย/ขนาด"
+        '
+        'ButtonItem21
+        '
+        Me.ButtonItem21.Name = "ButtonItem21"
+        Me.ButtonItem21.Text = "กำหนดหน่วยนับ"
+        '
+        'ButtonItem22
+        '
+        Me.ButtonItem22.Name = "ButtonItem22"
+        Me.ButtonItem22.Text = "กำหนดหน่วยวัด"
         '
         'RibbonBar3
         '
@@ -292,6 +384,22 @@ Partial Class frm_Main
         '
         Me.RibbonBar3.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem20
+        '
+        Me.ButtonItem20.Image = Global.Equipment.My.Resources.Resources.tag_print
+        Me.ButtonItem20.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem20.Name = "ButtonItem20"
+        Me.ButtonItem20.SubItemsExpandWidth = 14
+        Me.ButtonItem20.Text = "พิมพ์ป้าย" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "หมวดหมู่"
+        '
+        'ButtonItem16
+        '
+        Me.ButtonItem16.Image = Global.Equipment.My.Resources.Resources.barcode_print
+        Me.ButtonItem16.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem16.Name = "ButtonItem16"
+        Me.ButtonItem16.SubItemsExpandWidth = 14
+        Me.ButtonItem16.Text = "พิมพ์บาร์โค้ด" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
+        '
         'RibbonBar2
         '
         Me.RibbonBar2.AutoOverflowEnabled = True
@@ -323,6 +431,30 @@ Partial Class frm_Main
         '
         Me.RibbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem19
+        '
+        Me.ButtonItem19.Image = Global.Equipment.My.Resources.Resources.stock_in
+        Me.ButtonItem19.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem19.Name = "ButtonItem19"
+        Me.ButtonItem19.SubItemsExpandWidth = 14
+        Me.ButtonItem19.Text = "รับเข้า" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
+        '
+        'ButtonItem17
+        '
+        Me.ButtonItem17.Image = Global.Equipment.My.Resources.Resources.issue_item
+        Me.ButtonItem17.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem17.Name = "ButtonItem17"
+        Me.ButtonItem17.SubItemsExpandWidth = 14
+        Me.ButtonItem17.Text = "เบิก" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
+        '
+        'ButtonItem42
+        '
+        Me.ButtonItem42.Image = Global.Equipment.My.Resources.Resources.tranfer_item
+        Me.ButtonItem42.ImagePaddingHorizontal = 15
+        Me.ButtonItem42.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem42.Name = "ButtonItem42"
+        Me.ButtonItem42.Text = "โอนย้าย" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
+        '
         'ItemContainer7
         '
         '
@@ -337,6 +469,53 @@ Partial Class frm_Main
         '
         '
         Me.ItemContainer7.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem41
+        '
+        Me.ButtonItem41.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem41.Image = Global.Equipment.My.Resources.Resources.stock_count
+        Me.ButtonItem41.ImagePaddingHorizontal = 15
+        Me.ButtonItem41.Name = "ButtonItem41"
+        Me.ButtonItem41.Text = "นับสต๊อก"
+        '
+        'ButtonItem40
+        '
+        Me.ButtonItem40.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem40.Image = Global.Equipment.My.Resources.Resources.stock_adjust
+        Me.ButtonItem40.ImagePaddingHorizontal = 15
+        Me.ButtonItem40.Name = "ButtonItem40"
+        Me.ButtonItem40.Text = "ปรับปรุงสต๊อก"
+        '
+        'ButtonItem44
+        '
+        Me.ButtonItem44.AutoExpandOnClick = True
+        Me.ButtonItem44.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem44.Image = Global.Equipment.My.Resources.Resources.in_out_history
+        Me.ButtonItem44.ImagePaddingHorizontal = 15
+        Me.ButtonItem44.Name = "ButtonItem44"
+        Me.ButtonItem44.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem45, Me.ButtonItem46, Me.ButtonItem47, Me.ButtonItem48})
+        Me.ButtonItem44.SubItemsExpandWidth = 14
+        Me.ButtonItem44.Text = "ประวัติรายการ"
+        '
+        'ButtonItem45
+        '
+        Me.ButtonItem45.Name = "ButtonItem45"
+        Me.ButtonItem45.Text = "ประวัติการรับเข้า"
+        '
+        'ButtonItem46
+        '
+        Me.ButtonItem46.Name = "ButtonItem46"
+        Me.ButtonItem46.Text = "ประวัติการเบิก"
+        '
+        'ButtonItem47
+        '
+        Me.ButtonItem47.Name = "ButtonItem47"
+        Me.ButtonItem47.Text = "ประวัติการปรับปรุงสต๊อก"
+        '
+        'ButtonItem48
+        '
+        Me.ButtonItem48.Name = "ButtonItem48"
+        Me.ButtonItem48.Text = "ประวัติการโอนย้าย"
         '
         'RibbonBar1
         '
@@ -368,6 +547,117 @@ Partial Class frm_Main
         '
         '
         Me.RibbonBar1.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem2
+        '
+        Me.ButtonItem2.Image = Global.Equipment.My.Resources.Resources.add_item
+        Me.ButtonItem2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem2.Name = "ButtonItem2"
+        Me.ButtonItem2.SubItemsExpandWidth = 14
+        Me.ButtonItem2.Text = "เพิ่ม" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการใหม่"
+        '
+        'ButtonItem32
+        '
+        Me.ButtonItem32.Image = Global.Equipment.My.Resources.Resources.item_find
+        Me.ButtonItem32.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem32.Name = "ButtonItem32"
+        Me.ButtonItem32.SubItemsExpandWidth = 14
+        Me.ButtonItem32.Text = "ค้นหา" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
+        '
+        'RibbonPanel2
+        '
+        Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonPanel2.Controls.Add(Me.RibbonBar5)
+        Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonPanel2.Name = "RibbonPanel2"
+        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
+        Me.RibbonPanel2.Size = New System.Drawing.Size(1212, 170)
+        '
+        '
+        '
+        Me.RibbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonPanel2.TabIndex = 2
+        Me.RibbonPanel2.Visible = False
+        '
+        'RibbonBar5
+        '
+        Me.RibbonBar5.AutoOverflowEnabled = True
+        '
+        '
+        '
+        Me.RibbonBar5.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar5.ContainerControlProcessDialogKey = True
+        Me.RibbonBar5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar5.DragDropSupport = True
+        Me.RibbonBar5.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem27, Me.ButtonItem29, Me.ButtonItem28, Me.ButtonItem30, Me.ButtonItem31})
+        Me.RibbonBar5.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
+        Me.RibbonBar5.Location = New System.Drawing.Point(3, 0)
+        Me.RibbonBar5.Name = "RibbonBar5"
+        Me.RibbonBar5.Size = New System.Drawing.Size(405, 168)
+        Me.RibbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar5.TabIndex = 0
+        Me.RibbonBar5.Text = "รายงาน"
+        '
+        '
+        '
+        Me.RibbonBar5.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar5.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem27
+        '
+        Me.ButtonItem27.Image = Global.Equipment.My.Resources.Resources.report_blue
+        Me.ButtonItem27.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem27.Name = "ButtonItem27"
+        Me.ButtonItem27.SubItemsExpandWidth = 14
+        Me.ButtonItem27.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "คงเหลือ"
+        '
+        'ButtonItem29
+        '
+        Me.ButtonItem29.Image = Global.Equipment.My.Resources.Resources.report_blue
+        Me.ButtonItem29.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem29.Name = "ButtonItem29"
+        Me.ButtonItem29.SubItemsExpandWidth = 14
+        Me.ButtonItem29.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "มูลค่าคงเหลือ"
+        '
+        'ButtonItem28
+        '
+        Me.ButtonItem28.Image = Global.Equipment.My.Resources.Resources.report_green
+        Me.ButtonItem28.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem28.Name = "ButtonItem28"
+        Me.ButtonItem28.SubItemsExpandWidth = 14
+        Me.ButtonItem28.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รับเข้า - จ่ายออก"
+        '
+        'ButtonItem30
+        '
+        Me.ButtonItem30.Image = Global.Equipment.My.Resources.Resources.report_purple
+        Me.ButtonItem30.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem30.Name = "ButtonItem30"
+        Me.ButtonItem30.SubItemsExpandWidth = 14
+        Me.ButtonItem30.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "การโอนย้ายสต๊อก"
+        '
+        'ButtonItem31
+        '
+        Me.ButtonItem31.Image = Global.Equipment.My.Resources.Resources.report_purple
+        Me.ButtonItem31.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem31.Name = "ButtonItem31"
+        Me.ButtonItem31.SubItemsExpandWidth = 14
+        Me.ButtonItem31.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ปรับปรุงสต๊อก"
         '
         'RibbonPanel3
         '
@@ -426,6 +716,14 @@ Partial Class frm_Main
         '
         Me.RibbonBar9.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
+        'ButtonItem26
+        '
+        Me.ButtonItem26.Image = Global.Equipment.My.Resources.Resources.application_info
+        Me.ButtonItem26.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem26.Name = "ButtonItem26"
+        Me.ButtonItem26.SubItemsExpandWidth = 14
+        Me.ButtonItem26.Text = "เกี่ยวกับ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ซอฟต์แวร์"
+        '
         'RibbonBar8
         '
         Me.RibbonBar8.AutoOverflowEnabled = True
@@ -456,6 +754,22 @@ Partial Class frm_Main
         '
         '
         Me.RibbonBar8.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem36
+        '
+        Me.ButtonItem36.Image = Global.Equipment.My.Resources.Resources.database_backup
+        Me.ButtonItem36.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem36.Name = "ButtonItem36"
+        Me.ButtonItem36.SubItemsExpandWidth = 14
+        Me.ButtonItem36.Text = "สำรองข้อมูล"
+        '
+        'ButtonItem43
+        '
+        Me.ButtonItem43.Image = Global.Equipment.My.Resources.Resources.clear_data
+        Me.ButtonItem43.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem43.Name = "ButtonItem43"
+        Me.ButtonItem43.SubItemsExpandWidth = 14
+        Me.ButtonItem43.Text = "ล้างข้อมูล"
         '
         'RibbonBar4
         '
@@ -488,60 +802,21 @@ Partial Class frm_Main
         '
         Me.RibbonBar4.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         '
-        'RibbonPanel2
+        'ButtonItem23
         '
-        Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonPanel2.Controls.Add(Me.RibbonBar5)
-        Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonPanel2.Name = "RibbonPanel2"
-        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
-        Me.RibbonPanel2.Size = New System.Drawing.Size(1212, 170)
+        Me.ButtonItem23.Image = Global.Equipment.My.Resources.Resources.setting
+        Me.ButtonItem23.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem23.Name = "ButtonItem23"
+        Me.ButtonItem23.SubItemsExpandWidth = 14
+        Me.ButtonItem23.Text = "ตั้งค่าทั่วไป"
         '
+        'ButtonItem24
         '
-        '
-        Me.RibbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonPanel2.TabIndex = 2
-        Me.RibbonPanel2.Visible = False
-        '
-        'RibbonBar5
-        '
-        Me.RibbonBar5.AutoOverflowEnabled = True
-        '
-        '
-        '
-        Me.RibbonBar5.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar5.ContainerControlProcessDialogKey = True
-        Me.RibbonBar5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar5.DragDropSupport = True
-        Me.RibbonBar5.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem27, Me.ButtonItem29, Me.ButtonItem28, Me.ButtonItem30, Me.ButtonItem31})
-        Me.RibbonBar5.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
-        Me.RibbonBar5.Location = New System.Drawing.Point(3, 0)
-        Me.RibbonBar5.Name = "RibbonBar5"
-        Me.RibbonBar5.Size = New System.Drawing.Size(405, 168)
-        Me.RibbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar5.TabIndex = 0
-        Me.RibbonBar5.Text = "รายงาน"
-        '
-        '
-        '
-        Me.RibbonBar5.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar5.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ButtonItem24.Image = Global.Equipment.My.Resources.Resources.permission
+        Me.ButtonItem24.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem24.Name = "ButtonItem24"
+        Me.ButtonItem24.SubItemsExpandWidth = 14
+        Me.ButtonItem24.Text = "กำหนด" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "สิทธิการใช้งาน"
         '
         'RibbonTabItem1
         '
@@ -669,281 +944,6 @@ Partial Class frm_Main
         Me.TabItem_Dashboard.Name = "TabItem_Dashboard"
         Me.TabItem_Dashboard.Text = "แดชบอร์ด"
         '
-        'ButtonItem39
-        '
-        Me.ButtonItem39.Image = Global.Equipment.My.Resources.Resources.user_edit
-        Me.ButtonItem39.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem39.Name = "ButtonItem39"
-        Me.ButtonItem39.SubItemsExpandWidth = 14
-        Me.ButtonItem39.Text = "แก้ไข" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ข้อมูลผู้ใช้"
-        '
-        'ButtonItem1
-        '
-        Me.ButtonItem1.Image = Global.Equipment.My.Resources.Resources.user_logout
-        Me.ButtonItem1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem1.Name = "ButtonItem1"
-        Me.ButtonItem1.SubItemsExpandWidth = 14
-        Me.ButtonItem1.Text = "ออกจากระบบ"
-        '
-        'ButtonItem18
-        '
-        Me.ButtonItem18.Image = Global.Equipment.My.Resources.Resources.warehouse_change
-        Me.ButtonItem18.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem18.Name = "ButtonItem18"
-        Me.ButtonItem18.SubItemsExpandWidth = 14
-        Me.ButtonItem18.Text = "เปลี่ยนคลัง"
-        '
-        'ButtonItem25
-        '
-        Me.ButtonItem25.Image = Global.Equipment.My.Resources.Resources.warehouse_config
-        Me.ButtonItem25.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem25.Name = "ButtonItem25"
-        Me.ButtonItem25.SubItemsExpandWidth = 14
-        Me.ButtonItem25.Text = "ตั้งค่าคลัง"
-        '
-        'ButtonItem34
-        '
-        Me.ButtonItem34.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem34.Image = Global.Equipment.My.Resources.Resources.config_location
-        Me.ButtonItem34.ImagePaddingHorizontal = 15
-        Me.ButtonItem34.Name = "ButtonItem34"
-        Me.ButtonItem34.Text = "สถานที่จัดเก็บ"
-        '
-        'ButtonItem33
-        '
-        Me.ButtonItem33.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem33.Image = Global.Equipment.My.Resources.Resources.config_category
-        Me.ButtonItem33.ImagePaddingHorizontal = 15
-        Me.ButtonItem33.Name = "ButtonItem33"
-        Me.ButtonItem33.Text = "หมวดหมู่หลัก"
-        '
-        'ButtonItem35
-        '
-        Me.ButtonItem35.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem35.Image = Global.Equipment.My.Resources.Resources.config_group
-        Me.ButtonItem35.ImagePaddingHorizontal = 15
-        Me.ButtonItem35.Name = "ButtonItem35"
-        Me.ButtonItem35.Text = "หมวดหมู่ย่อย"
-        '
-        'ButtonItem3
-        '
-        Me.ButtonItem3.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem3.Image = Global.Equipment.My.Resources.Resources.config_material
-        Me.ButtonItem3.ImagePaddingHorizontal = 15
-        Me.ButtonItem3.Name = "ButtonItem3"
-        Me.ButtonItem3.Text = "คุณสมบัติ/วัสดุ"
-        '
-        'ButtonItem37
-        '
-        Me.ButtonItem37.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem37.Image = Global.Equipment.My.Resources.Resources.config_supplier
-        Me.ButtonItem37.ImagePaddingHorizontal = 15
-        Me.ButtonItem37.Name = "ButtonItem37"
-        Me.ButtonItem37.Text = "ผู้ผลิต/ผู้จำหน่าย"
-        '
-        'ButtonItem38
-        '
-        Me.ButtonItem38.AutoExpandOnClick = True
-        Me.ButtonItem38.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem38.Image = Global.Equipment.My.Resources.Resources.config_measu_unit2
-        Me.ButtonItem38.ImagePaddingHorizontal = 15
-        Me.ButtonItem38.Name = "ButtonItem38"
-        Me.ButtonItem38.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem21, Me.ButtonItem22})
-        Me.ButtonItem38.Text = "หน่วย/ขนาด"
-        '
-        'ButtonItem21
-        '
-        Me.ButtonItem21.Name = "ButtonItem21"
-        Me.ButtonItem21.Text = "กำหนดหน่วยนับ"
-        '
-        'ButtonItem22
-        '
-        Me.ButtonItem22.Name = "ButtonItem22"
-        Me.ButtonItem22.Text = "กำหนดหน่วยวัด"
-        '
-        'ButtonItem20
-        '
-        Me.ButtonItem20.Image = Global.Equipment.My.Resources.Resources.tag_print
-        Me.ButtonItem20.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem20.Name = "ButtonItem20"
-        Me.ButtonItem20.SubItemsExpandWidth = 14
-        Me.ButtonItem20.Text = "พิมพ์ป้าย" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "หมวดหมู่"
-        '
-        'ButtonItem16
-        '
-        Me.ButtonItem16.Image = Global.Equipment.My.Resources.Resources.barcode_print
-        Me.ButtonItem16.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem16.Name = "ButtonItem16"
-        Me.ButtonItem16.SubItemsExpandWidth = 14
-        Me.ButtonItem16.Text = "พิมพ์บาร์โค้ด" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
-        '
-        'ButtonItem19
-        '
-        Me.ButtonItem19.Image = Global.Equipment.My.Resources.Resources.stock_in
-        Me.ButtonItem19.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem19.Name = "ButtonItem19"
-        Me.ButtonItem19.SubItemsExpandWidth = 14
-        Me.ButtonItem19.Text = "รับเข้า" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
-        '
-        'ButtonItem17
-        '
-        Me.ButtonItem17.Image = Global.Equipment.My.Resources.Resources.issue_item
-        Me.ButtonItem17.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem17.Name = "ButtonItem17"
-        Me.ButtonItem17.SubItemsExpandWidth = 14
-        Me.ButtonItem17.Text = "เบิก" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
-        '
-        'ButtonItem42
-        '
-        Me.ButtonItem42.Image = Global.Equipment.My.Resources.Resources.tranfer_item
-        Me.ButtonItem42.ImagePaddingHorizontal = 15
-        Me.ButtonItem42.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem42.Name = "ButtonItem42"
-        Me.ButtonItem42.Text = "โอนย้าย" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
-        '
-        'ButtonItem41
-        '
-        Me.ButtonItem41.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem41.Image = Global.Equipment.My.Resources.Resources.stock_count
-        Me.ButtonItem41.ImagePaddingHorizontal = 15
-        Me.ButtonItem41.Name = "ButtonItem41"
-        Me.ButtonItem41.Text = "นับสต๊อก"
-        '
-        'ButtonItem40
-        '
-        Me.ButtonItem40.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem40.Image = Global.Equipment.My.Resources.Resources.stock_adjust
-        Me.ButtonItem40.ImagePaddingHorizontal = 15
-        Me.ButtonItem40.Name = "ButtonItem40"
-        Me.ButtonItem40.Text = "ปรับปรุงสต๊อก"
-        '
-        'ButtonItem44
-        '
-        Me.ButtonItem44.AutoExpandOnClick = True
-        Me.ButtonItem44.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem44.Image = Global.Equipment.My.Resources.Resources.in_out_history
-        Me.ButtonItem44.ImagePaddingHorizontal = 15
-        Me.ButtonItem44.Name = "ButtonItem44"
-        Me.ButtonItem44.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem45, Me.ButtonItem46, Me.ButtonItem47, Me.ButtonItem48})
-        Me.ButtonItem44.SubItemsExpandWidth = 14
-        Me.ButtonItem44.Text = "ประวัติรายการ"
-        '
-        'ButtonItem45
-        '
-        Me.ButtonItem45.Name = "ButtonItem45"
-        Me.ButtonItem45.Text = "ประวัติการรับเข้า"
-        '
-        'ButtonItem46
-        '
-        Me.ButtonItem46.Name = "ButtonItem46"
-        Me.ButtonItem46.Text = "ประวัติการเบิก"
-        '
-        'ButtonItem47
-        '
-        Me.ButtonItem47.Name = "ButtonItem47"
-        Me.ButtonItem47.Text = "ประวัติการปรับปรุงสต๊อก"
-        '
-        'ButtonItem48
-        '
-        Me.ButtonItem48.Name = "ButtonItem48"
-        Me.ButtonItem48.Text = "ประวัติการโอนย้าย"
-        '
-        'ButtonItem2
-        '
-        Me.ButtonItem2.Image = Global.Equipment.My.Resources.Resources.add_item
-        Me.ButtonItem2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem2.Name = "ButtonItem2"
-        Me.ButtonItem2.SubItemsExpandWidth = 14
-        Me.ButtonItem2.Text = "เพิ่ม" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการใหม่"
-        '
-        'ButtonItem32
-        '
-        Me.ButtonItem32.Image = Global.Equipment.My.Resources.Resources.item_find
-        Me.ButtonItem32.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem32.Name = "ButtonItem32"
-        Me.ButtonItem32.SubItemsExpandWidth = 14
-        Me.ButtonItem32.Text = "ค้นหา" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รายการ"
-        '
-        'ButtonItem27
-        '
-        Me.ButtonItem27.Image = Global.Equipment.My.Resources.Resources.report_blue
-        Me.ButtonItem27.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem27.Name = "ButtonItem27"
-        Me.ButtonItem27.SubItemsExpandWidth = 14
-        Me.ButtonItem27.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "คงเหลือ"
-        '
-        'ButtonItem29
-        '
-        Me.ButtonItem29.Image = Global.Equipment.My.Resources.Resources.report_blue
-        Me.ButtonItem29.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem29.Name = "ButtonItem29"
-        Me.ButtonItem29.SubItemsExpandWidth = 14
-        Me.ButtonItem29.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "มูลค่าคงเหลือ"
-        '
-        'ButtonItem28
-        '
-        Me.ButtonItem28.Image = Global.Equipment.My.Resources.Resources.report_green
-        Me.ButtonItem28.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem28.Name = "ButtonItem28"
-        Me.ButtonItem28.SubItemsExpandWidth = 14
-        Me.ButtonItem28.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "รับเข้า - จ่ายออก"
-        '
-        'ButtonItem30
-        '
-        Me.ButtonItem30.Image = Global.Equipment.My.Resources.Resources.report_purple
-        Me.ButtonItem30.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem30.Name = "ButtonItem30"
-        Me.ButtonItem30.SubItemsExpandWidth = 14
-        Me.ButtonItem30.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "การโอนย้ายสต๊อก"
-        '
-        'ButtonItem31
-        '
-        Me.ButtonItem31.Image = Global.Equipment.My.Resources.Resources.report_purple
-        Me.ButtonItem31.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem31.Name = "ButtonItem31"
-        Me.ButtonItem31.SubItemsExpandWidth = 14
-        Me.ButtonItem31.Text = "รายงาน" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ปรับปรุงสต๊อก"
-        '
-        'ButtonItem26
-        '
-        Me.ButtonItem26.Image = Global.Equipment.My.Resources.Resources.application_info
-        Me.ButtonItem26.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem26.Name = "ButtonItem26"
-        Me.ButtonItem26.SubItemsExpandWidth = 14
-        Me.ButtonItem26.Text = "เกี่ยวกับ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ซอฟต์แวร์"
-        '
-        'ButtonItem36
-        '
-        Me.ButtonItem36.Image = Global.Equipment.My.Resources.Resources.database_backup
-        Me.ButtonItem36.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem36.Name = "ButtonItem36"
-        Me.ButtonItem36.SubItemsExpandWidth = 14
-        Me.ButtonItem36.Text = "สำรองข้อมูล"
-        '
-        'ButtonItem43
-        '
-        Me.ButtonItem43.Image = Global.Equipment.My.Resources.Resources.clear_data
-        Me.ButtonItem43.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem43.Name = "ButtonItem43"
-        Me.ButtonItem43.SubItemsExpandWidth = 14
-        Me.ButtonItem43.Text = "ล้างข้อมูล"
-        '
-        'ButtonItem23
-        '
-        Me.ButtonItem23.Image = Global.Equipment.My.Resources.Resources.setting
-        Me.ButtonItem23.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem23.Name = "ButtonItem23"
-        Me.ButtonItem23.SubItemsExpandWidth = 14
-        Me.ButtonItem23.Text = "ตั้งค่าทั่วไป"
-        '
-        'ButtonItem24
-        '
-        Me.ButtonItem24.Image = Global.Equipment.My.Resources.Resources.permission
-        Me.ButtonItem24.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem24.Name = "ButtonItem24"
-        Me.ButtonItem24.SubItemsExpandWidth = 14
-        Me.ButtonItem24.Text = "กำหนด" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "สิทธิการใช้งาน"
-        '
         'frm_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
@@ -961,8 +961,8 @@ Partial Class frm_Main
         Me.RibbonControl1.ResumeLayout(False)
         Me.RibbonControl1.PerformLayout()
         Me.RibbonPanel1.ResumeLayout(False)
-        Me.RibbonPanel3.ResumeLayout(False)
         Me.RibbonPanel2.ResumeLayout(False)
+        Me.RibbonPanel3.ResumeLayout(False)
         CType(Me.bar_StatusInfo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tabcontrol_Main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabcontrol_Main.ResumeLayout(False)

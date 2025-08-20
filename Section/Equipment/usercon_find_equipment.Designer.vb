@@ -22,11 +22,11 @@ Partial Class usercon_find_equipment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim Padding4 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Background3 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
-        Dim Padding5 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Padding6 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Background4 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Padding1 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Padding2 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Padding3 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.toolbar_RoomAction = New DevComponents.DotNetBar.Bar()
         Me.toolbar_RoomAction_Add = New DevComponents.DotNetBar.ButtonItem()
         Me.toolbar_RoomAction_ViewEdit = New DevComponents.DotNetBar.ButtonItem()
@@ -42,16 +42,16 @@ Partial Class usercon_find_equipment
         Me.Line1 = New DevComponents.DotNetBar.Controls.Line()
         Me.TextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.ComboBoxEx3 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
         Me.ComboBoxEx2 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
-        Me.ComboBoxEx1 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
-        Me.ComboBoxEx4 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
         Me.ComboBoxEx5 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.ComboBoxEx4 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboBoxEx1 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         CType(Me.toolbar_RoomAction, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx1.SuspendLayout()
         Me.SuspendLayout()
@@ -146,28 +146,28 @@ Partial Class usercon_find_equipment
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.supergridview_RoomList.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding4.Left = 5
-        Padding4.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Padding = Padding4
-        Background3.Color1 = System.Drawing.Color.WhiteSmoke
-        Background3.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.MouseOver.Background = Background3
+        Padding1.Left = 5
+        Padding1.Right = 5
+        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Padding = Padding1
+        Background1.Color1 = System.Drawing.Color.WhiteSmoke
+        Background1.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.MouseOver.Background = Background1
         Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding5.Left = 5
-        Padding5.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding5
+        Padding2.Left = 5
+        Padding2.Right = 5
+        Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding2
         Me.supergridview_RoomList.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.supergridview_RoomList.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding6.Left = 5
-        Padding6.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Padding = Padding6
+        Padding3.Left = 5
+        Padding3.Right = 5
+        Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Padding = Padding3
         Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
-        Background4.Color1 = System.Drawing.Color.WhiteSmoke
-        Background4.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background4
+        Background2.Color1 = System.Drawing.Color.WhiteSmoke
+        Background2.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background2
         Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.supergridview_RoomList.FilterExprColors.SysFunction = System.Drawing.Color.Empty
         Me.supergridview_RoomList.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
@@ -259,10 +259,12 @@ Partial Class usercon_find_equipment
         '
         'Line1
         '
+        Me.Line1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Line1.ForeColor = System.Drawing.Color.LightGray
-        Me.Line1.Location = New System.Drawing.Point(102, 39)
+        Me.Line1.Location = New System.Drawing.Point(11, 39)
         Me.Line1.Name = "Line1"
-        Me.Line1.Size = New System.Drawing.Size(352, 14)
+        Me.Line1.Size = New System.Drawing.Size(964, 14)
         Me.Line1.TabIndex = 24
         Me.Line1.Text = "Line1"
         '
@@ -279,8 +281,10 @@ Partial Class usercon_find_equipment
         Me.TextBoxX2.Location = New System.Drawing.Point(102, 11)
         Me.TextBoxX2.Name = "TextBoxX2"
         Me.TextBoxX2.PreventEnterBeep = True
-        Me.TextBoxX2.Size = New System.Drawing.Size(352, 22)
+        Me.TextBoxX2.Size = New System.Drawing.Size(250, 22)
         Me.TextBoxX2.TabIndex = 23
+        Me.TextBoxX2.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.TextBoxX2.WatermarkText = "ป้อนเพื่อค้นหาด้วยรหัสหรือชื่อรายการ"
         '
         'ComboBoxEx3
         '
@@ -290,11 +294,39 @@ Partial Class usercon_find_equipment
         Me.ComboBoxEx3.ForeColor = System.Drawing.Color.Black
         Me.ComboBoxEx3.FormattingEnabled = True
         Me.ComboBoxEx3.ItemHeight = 17
-        Me.ComboBoxEx3.Location = New System.Drawing.Point(577, 59)
+        Me.ComboBoxEx3.Location = New System.Drawing.Point(475, 59)
         Me.ComboBoxEx3.Name = "ComboBoxEx3"
-        Me.ComboBoxEx3.Size = New System.Drawing.Size(352, 23)
+        Me.ComboBoxEx3.Size = New System.Drawing.Size(250, 23)
         Me.ComboBoxEx3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBoxEx3.TabIndex = 22
+        Me.ComboBoxEx3.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBoxEx3.WatermarkText = "ใช้การกรองด้วยประเภทวัสดุ"
+        '
+        'LabelX3
+        '
+        '
+        '
+        '
+        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX3.Location = New System.Drawing.Point(11, 59)
+        Me.LabelX3.Name = "LabelX3"
+        Me.LabelX3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX3.Size = New System.Drawing.Size(85, 23)
+        Me.LabelX3.TabIndex = 17
+        Me.LabelX3.Text = "ตำแหน่งจัดเก็บ :"
+        '
+        'LabelX7
+        '
+        '
+        '
+        '
+        Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX7.Location = New System.Drawing.Point(369, 88)
+        Me.LabelX7.Name = "LabelX7"
+        Me.LabelX7.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX7.Size = New System.Drawing.Size(100, 23)
+        Me.LabelX7.TabIndex = 17
+        Me.LabelX7.Text = "ผู้ผลิต/ผู้จำหน่าย :"
         '
         'ComboBoxEx2
         '
@@ -306,9 +338,11 @@ Partial Class usercon_find_equipment
         Me.ComboBoxEx2.ItemHeight = 17
         Me.ComboBoxEx2.Location = New System.Drawing.Point(102, 117)
         Me.ComboBoxEx2.Name = "ComboBoxEx2"
-        Me.ComboBoxEx2.Size = New System.Drawing.Size(352, 23)
+        Me.ComboBoxEx2.Size = New System.Drawing.Size(250, 23)
         Me.ComboBoxEx2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBoxEx2.TabIndex = 21
+        Me.ComboBoxEx2.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBoxEx2.WatermarkText = "ใช้การกรองด้วยหมวดหมู่ย่อย"
         '
         'LabelX2
         '
@@ -336,6 +370,38 @@ Partial Class usercon_find_equipment
         Me.LabelX4.TabIndex = 18
         Me.LabelX4.Text = "คำค้นหา :"
         '
+        'ComboBoxEx5
+        '
+        Me.ComboBoxEx5.DisplayMember = "Text"
+        Me.ComboBoxEx5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBoxEx5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBoxEx5.ForeColor = System.Drawing.Color.Black
+        Me.ComboBoxEx5.FormattingEnabled = True
+        Me.ComboBoxEx5.ItemHeight = 17
+        Me.ComboBoxEx5.Location = New System.Drawing.Point(102, 59)
+        Me.ComboBoxEx5.Name = "ComboBoxEx5"
+        Me.ComboBoxEx5.Size = New System.Drawing.Size(250, 23)
+        Me.ComboBoxEx5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBoxEx5.TabIndex = 20
+        Me.ComboBoxEx5.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBoxEx5.WatermarkText = "ใช้การกรองด้วยตำแหน่งจัดเก็บ"
+        '
+        'ComboBoxEx4
+        '
+        Me.ComboBoxEx4.DisplayMember = "Text"
+        Me.ComboBoxEx4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBoxEx4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBoxEx4.ForeColor = System.Drawing.Color.Black
+        Me.ComboBoxEx4.FormattingEnabled = True
+        Me.ComboBoxEx4.ItemHeight = 17
+        Me.ComboBoxEx4.Location = New System.Drawing.Point(475, 88)
+        Me.ComboBoxEx4.Name = "ComboBoxEx4"
+        Me.ComboBoxEx4.Size = New System.Drawing.Size(250, 23)
+        Me.ComboBoxEx4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBoxEx4.TabIndex = 20
+        Me.ComboBoxEx4.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBoxEx4.WatermarkText = "ใช้การกรองด้วยผู้ผลิตหรือผู้จำหน่าย"
+        '
         'ComboBoxEx1
         '
         Me.ComboBoxEx1.DisplayMember = "Text"
@@ -346,9 +412,24 @@ Partial Class usercon_find_equipment
         Me.ComboBoxEx1.ItemHeight = 17
         Me.ComboBoxEx1.Location = New System.Drawing.Point(102, 88)
         Me.ComboBoxEx1.Name = "ComboBoxEx1"
-        Me.ComboBoxEx1.Size = New System.Drawing.Size(352, 23)
+        Me.ComboBoxEx1.Size = New System.Drawing.Size(250, 23)
         Me.ComboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBoxEx1.TabIndex = 20
+        Me.ComboBoxEx1.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBoxEx1.WatermarkText = "ใช้การกรองด้วยตำแหน่งหมวดหมู่หลัก"
+        '
+        'LabelX5
+        '
+        '
+        '
+        '
+        Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX5.Location = New System.Drawing.Point(369, 59)
+        Me.LabelX5.Name = "LabelX5"
+        Me.LabelX5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX5.Size = New System.Drawing.Size(85, 23)
+        Me.LabelX5.TabIndex = 19
+        Me.LabelX5.Text = "วัสดุ :"
         '
         'LabelX1
         '
@@ -362,73 +443,6 @@ Partial Class usercon_find_equipment
         Me.LabelX1.Size = New System.Drawing.Size(85, 23)
         Me.LabelX1.TabIndex = 19
         Me.LabelX1.Text = "หมวดหมู่หลัก :"
-        '
-        'LabelX5
-        '
-        '
-        '
-        '
-        Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX5.Location = New System.Drawing.Point(471, 59)
-        Me.LabelX5.Name = "LabelX5"
-        Me.LabelX5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX5.Size = New System.Drawing.Size(85, 23)
-        Me.LabelX5.TabIndex = 19
-        Me.LabelX5.Text = "วัสดุ :"
-        '
-        'ComboBoxEx4
-        '
-        Me.ComboBoxEx4.DisplayMember = "Text"
-        Me.ComboBoxEx4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.ComboBoxEx4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBoxEx4.ForeColor = System.Drawing.Color.Black
-        Me.ComboBoxEx4.FormattingEnabled = True
-        Me.ComboBoxEx4.ItemHeight = 17
-        Me.ComboBoxEx4.Location = New System.Drawing.Point(577, 88)
-        Me.ComboBoxEx4.Name = "ComboBoxEx4"
-        Me.ComboBoxEx4.Size = New System.Drawing.Size(352, 23)
-        Me.ComboBoxEx4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ComboBoxEx4.TabIndex = 20
-        '
-        'LabelX7
-        '
-        '
-        '
-        '
-        Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX7.Location = New System.Drawing.Point(471, 88)
-        Me.LabelX7.Name = "LabelX7"
-        Me.LabelX7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX7.Size = New System.Drawing.Size(100, 23)
-        Me.LabelX7.TabIndex = 17
-        Me.LabelX7.Text = "ผู้ผลิต/ผู้จำหน่าย :"
-        '
-        'ComboBoxEx5
-        '
-        Me.ComboBoxEx5.DisplayMember = "Text"
-        Me.ComboBoxEx5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.ComboBoxEx5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBoxEx5.ForeColor = System.Drawing.Color.Black
-        Me.ComboBoxEx5.FormattingEnabled = True
-        Me.ComboBoxEx5.ItemHeight = 17
-        Me.ComboBoxEx5.Location = New System.Drawing.Point(102, 59)
-        Me.ComboBoxEx5.Name = "ComboBoxEx5"
-        Me.ComboBoxEx5.Size = New System.Drawing.Size(352, 23)
-        Me.ComboBoxEx5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ComboBoxEx5.TabIndex = 20
-        '
-        'LabelX3
-        '
-        '
-        '
-        '
-        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX3.Location = New System.Drawing.Point(11, 59)
-        Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX3.Size = New System.Drawing.Size(85, 23)
-        Me.LabelX3.TabIndex = 17
-        Me.LabelX3.Text = "ตำแหน่งจัดเก็บ :"
         '
         'usercon_find_equipment
         '
