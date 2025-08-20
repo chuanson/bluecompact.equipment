@@ -569,10 +569,10 @@ Partial Class frm_Main
         Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonPanel2.Controls.Add(Me.RibbonBar5)
         Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 53)
         Me.RibbonPanel2.Name = "RibbonPanel2"
         Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
-        Me.RibbonPanel2.Size = New System.Drawing.Size(1212, 170)
+        Me.RibbonPanel2.Size = New System.Drawing.Size(1212, 117)
         '
         '
         '
@@ -606,7 +606,7 @@ Partial Class frm_Main
         Me.RibbonBar5.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar5.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar5.Name = "RibbonBar5"
-        Me.RibbonBar5.Size = New System.Drawing.Size(405, 168)
+        Me.RibbonBar5.Size = New System.Drawing.Size(405, 115)
         Me.RibbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar5.TabIndex = 0
         Me.RibbonBar5.Text = "รายงาน"
@@ -666,10 +666,10 @@ Partial Class frm_Main
         Me.RibbonPanel3.Controls.Add(Me.RibbonBar8)
         Me.RibbonPanel3.Controls.Add(Me.RibbonBar4)
         Me.RibbonPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonPanel3.Location = New System.Drawing.Point(0, 53)
         Me.RibbonPanel3.Name = "RibbonPanel3"
         Me.RibbonPanel3.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
-        Me.RibbonPanel3.Size = New System.Drawing.Size(1212, 170)
+        Me.RibbonPanel3.Size = New System.Drawing.Size(1212, 117)
         '
         '
         '
@@ -703,7 +703,7 @@ Partial Class frm_Main
         Me.RibbonBar9.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar9.Location = New System.Drawing.Point(287, 0)
         Me.RibbonBar9.Name = "RibbonBar9"
-        Me.RibbonBar9.Size = New System.Drawing.Size(64, 168)
+        Me.RibbonBar9.Size = New System.Drawing.Size(64, 115)
         Me.RibbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar9.TabIndex = 2
         Me.RibbonBar9.Text = "ช่วยเหลือ"
@@ -742,7 +742,7 @@ Partial Class frm_Main
         Me.RibbonBar8.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar8.Location = New System.Drawing.Point(154, 0)
         Me.RibbonBar8.Name = "RibbonBar8"
-        Me.RibbonBar8.Size = New System.Drawing.Size(133, 168)
+        Me.RibbonBar8.Size = New System.Drawing.Size(133, 115)
         Me.RibbonBar8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar8.TabIndex = 1
         Me.RibbonBar8.Text = "ฐานข้อมูล"
@@ -789,7 +789,7 @@ Partial Class frm_Main
         Me.RibbonBar4.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
         Me.RibbonBar4.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar4.Name = "RibbonBar4"
-        Me.RibbonBar4.Size = New System.Drawing.Size(151, 168)
+        Me.RibbonBar4.Size = New System.Drawing.Size(151, 115)
         Me.RibbonBar4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar4.TabIndex = 0
         Me.RibbonBar4.Text = "ระบบ"
