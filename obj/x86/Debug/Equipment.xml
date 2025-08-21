@@ -19,11 +19,19 @@ Equipment
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Equipment.My.Resources.Resources.alert_m">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Equipment.My.Resources.Resources.application_info">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Equipment.My.Resources.Resources.barcode_print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Equipment.My.Resources.Resources.circle_check_m">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -67,6 +75,18 @@ Equipment
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Equipment.My.Resources.Resources.delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Equipment.My.Resources.Resources.error_m">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Equipment.My.Resources.Resources.exit_m">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Equipment.My.Resources.Resources.in_out_history">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -83,7 +103,15 @@ Equipment
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Equipment.My.Resources.Resources.logout_m">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Equipment.My.Resources.Resources.permission">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Equipment.My.Resources.Resources.question_m">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -136,6 +164,14 @@ Equipment
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Equipment.My.Resources.Resources.warehouse_config">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Equipment.My.Resources.Resources.warning_m">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Equipment.My.Resources.Resources.warning_xl">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

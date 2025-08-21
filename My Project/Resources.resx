@@ -211,4 +211,31 @@
   <data name="config_material" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icon\Ribbon\config_material.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alert_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\alert_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circle_check_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\circle_check_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\error_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\exit_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\logout_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\question_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\warning_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning_xl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\Task Dialog\warning_xl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

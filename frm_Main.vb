@@ -1,16 +1,21 @@
-﻿Public Class frm_Main
+﻿Imports System.IO
+Imports System.Xml.Linq
+Imports System.Data.SQLite
+Public Class frm_Main
 
+    Dim ConnectionString As String
     Private Sub frm_Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        ' load_Database()
+        ConnectionString = "Data Source=" & Application.StartupPath & "\Database\dbEquipment.db;Version=3;"
     End Sub
 
     ' ฟังก์ชันสำหรับเพิ่ม Tab ใหม่ใน TabControl
     Private Sub OpenNewTab(ByVal userControl As UserControl, ByVal tabName As String)
         ' ตรวจสอบว่าแท็บนี้เปิดอยู่หรือไม่
-        For Each tab As DevComponents.DotNetBar.TabItem In TabControl_Main.Tabs
+        For Each tab As DevComponents.DotNetBar.TabItem In tabcontrol_Main.Tabs
             If tab.Text = tabName Then
                 ' หากมีแท็บนี้อยู่แล้ว ให้เลือกแท็บนั้น
-                TabControl_Main.SelectedTab = tab
+                tabcontrol_Main.SelectedTab = tab
                 Return
             End If
         Next
@@ -24,7 +29,7 @@
         newTab.Name = "tab_" & tabName
 
         ' สลับไปที่ Tab ใหม่
-        TabControl_Main.SelectedTab = newTab
+        tabcontrol_Main.SelectedTab = newTab
 
         ' ตั้งค่าคุณสมบัติของ TabControlPanel
         newTabPanel.Dock = DockStyle.Fill
@@ -34,8 +39,8 @@
         userControl.Dock = DockStyle.Fill
 
         ' เพิ่ม Panel และ Tab เข้าใน TabControl
-        TabControl_Main.Controls.Add(newTabPanel)
-        TabControl_Main.Tabs.Add(newTab)
+        tabcontrol_Main.Controls.Add(newTabPanel)
+        tabcontrol_Main.Tabs.Add(newTab)
 
         ' ตั้งค่า Panel ให้ตรงกับ Tab ใหม่
         newTab.AttachedControl = newTabPanel
@@ -44,10 +49,9 @@
         newTabPanel.Controls.Add(userControl)
     End Sub
 
-    Private Sub ButtonItem32_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem32.Click
-        Dim UserControl_Employee As New usercon_find_equipment
-        'UserControl_Employee.ConnectionString = ConnectionString
-        'UserControl_Employee.UserID = UserID
-        OpenNewTab(UserControl_Employee, "ค้นหารายการ")
+    Private Sub ButtonItem_FindItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem_FindItem.Click
+        Dim UserControl As New usercon_find_equipment
+        UserControl.ConnectionString = ConnectionString
+        OpenNewTab(UserControl, "ค้นหารายการ")
     End Sub
 End Class

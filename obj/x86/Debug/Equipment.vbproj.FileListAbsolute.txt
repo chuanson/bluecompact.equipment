@@ -27,3 +27,9 @@ D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.pdb
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.Resources.resources
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.usercon_add_equipment.resources
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.usercon_find_equipment.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.vbprojResolveAssemblyReference.cache
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_Encrypt_Tools.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_IDGenerator.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.frm_LicenseRegister.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.dialog_Default.resources
+D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.dialog_Question.resources
