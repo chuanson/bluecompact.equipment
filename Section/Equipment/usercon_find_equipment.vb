@@ -9,6 +9,7 @@ Public Class usercon_find_equipment
     ' สร้าง Property เพื่อรับค่าจากฟอร์มหลัก
     Public Property ConnectionString As String
     Public Property UserID As String
+    Public Property WarehouseID As String
 
     ' *********************************************************************'
     ' ฟังชั่นการดึงข้อมูลฐานข้อมูล
@@ -20,13 +21,15 @@ Public Class usercon_find_equipment
 
     Private Sub load_Items()
         ' ดึงข้อมูลจาก SQL Server
-        Dim query As String = "SELECT * FROM vw_ItemDetails"
+        Dim query As String = "SELECT * FROM vw_ItemStockBalance_ByLocation WHERE WarehouseID = @WarehouseID ORDER BY LocationName ASC, ItemCode ASC"
         Dim resultTable As New DataTable()
 
         Try
             Using connection As New SQLiteConnection(ConnectionString)
                 connection.Open()
                 Using command As New SQLiteCommand(query, connection)
+                    command.Parameters.AddWithValue("@WarehouseID", WarehouseID)
+
                     Using adapter As New SQLiteDataAdapter(command)
                         adapter.Fill(resultTable)
 
@@ -58,26 +61,55 @@ Public Class usercon_find_equipment
 
         ' แทนที่หัวคอลัมน์
         With SuperGridView_Items.PrimaryGrid
-            .Columns("ItemName").HeaderText = "ชื่อรายการ"
+            .Columns("LocationName").HeaderText = "ตำแหน่ง"
+            .Columns("ItemCode").HeaderText = "รหัส"
+            .Columns("ItemName").HeaderText = "ชื่อ"
+            .Columns("BrandName").HeaderText = "ยี่ห้อ"
+            .Columns("ModelName").HeaderText = "รุ่น"
             .Columns("MaterialTypeNameTH").HeaderText = "ประเภทวัสดุ"
             .Columns("CategoryName").HeaderText = "หมวดหมู่"
             .Columns("SubCategoryName").HeaderText = "หมวดหมู่ย่อย"
-            .Columns("CurrentStock").HeaderText = "จำนวนคงคลัง"
-            .Columns("Measurement").HeaderText = "ขนาด/หน่วยวัด"
             .Columns("StandardCode").HeaderText = "มาตรฐาน"
-            .Columns("WarehouseName").HeaderText = "คลังสินค้า"
-            .Columns("LocationName").HeaderText = "ตำแหน่งเก็บ"
-            .Columns("SupplierName").HeaderText = "ผู้ผลิต/ผู้จำหน่าย"
-            .Columns("Remark").HeaderText = "หมายเหตุ"
+            .Columns("SupplierName").HeaderText = "ผู้จำหน่าย"
 
-            ' ซ่อน Primary Key
+            ' ค่ารวมการเคลื่อนไหว
+            .Columns("TotalStockIn").HeaderText = "รวมรับเข้า"
+            .Columns("TotalStockOut").HeaderText = "รวมเบิกออก"
+            .Columns("TotalTransferIn").HeaderText = "รวมโอนเข้า"
+            .Columns("TotalTransferOut").HeaderText = "รวมโอนออก"
+            .Columns("TotalAdjustment").HeaderText = "รวมปรับปรุงสต๊อก"
+
+            ' คงเหลือ
+            .Columns("CurrentStock").HeaderText = "สต๊อกคงเหลือ"
+            .Columns("QuantityUnit").HeaderText = "หน่วยนับ"
+
+            ' ซ่อน
+            .Columns("WarehouseID").Visible = False
+            .Columns("WarehouseName").Visible = False
+            .Columns("LocationID").Visible = False
             .Columns("ItemID").Visible = False
+            .Columns("TotalStockIn").Visible = False
+            .Columns("TotalStockOut").Visible = False
+            .Columns("TotalTransferIn").Visible = False
+            .Columns("TotalTransferOut").Visible = False
+            .Columns("TotalAdjustment").Visible = False
         End With
-
-        SortColumnAscending("CategoryName")
 
         ' นับจำนวนแถวใน SuperGridView
         supergrid_Module.GridView_RowCount(SuperGridView_Items)
+    End Sub
+
+    Private Sub CheckBoxItem_ShowStockInfo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBoxItem_ShowStockInfo.Click
+        Dim grid As GridPanel = SuperGridView_Items.PrimaryGrid
+
+        ' รายชื่อคอลัมน์ที่จะควบคุม
+        Dim detailColumns As String() = {"TotalStockIn", "TotalStockOut", "TotalTransferIn", "TotalTransferOut", "TotalAdjustment"}
+
+        For Each colName In detailColumns
+            If grid.Columns.Contains(colName) Then
+                grid.Columns(colName).Visible = CheckBoxItem_ShowStockInfo.Checked
+            End If
+        Next
     End Sub
 
     ' จัดเรียงโดยคอลัมน์
@@ -124,4 +156,5 @@ Public Class usercon_find_equipment
             End If
         Next
     End Sub
+
 End Class

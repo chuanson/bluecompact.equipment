@@ -22,136 +22,181 @@ Partial Class usercon_add_equipment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim Padding1 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
-        Dim Padding2 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Padding3 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
-        Me.supergridview_RoomList = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
+        Dim Padding4 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Background3 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Padding5 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Padding6 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Background4 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Me.SuperGridView_RecentCreate = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
+        Me.Button_FormReset = New DevComponents.DotNetBar.ButtonX()
+        Me.Button_ItemCreate = New DevComponents.DotNetBar.ButtonX()
+        Me.Button_PictureModify = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonItem_PictureChooseFile = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem_PictureCapture = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem_PictureRemove = New DevComponents.DotNetBar.ButtonItem()
+        Me.panel_Picture = New DevComponents.DotNetBar.PanelEx()
+        Me.PictureBox_ItemPicture = New System.Windows.Forms.PictureBox()
+        Me.RichTextBox_Remark = New DevComponents.DotNetBar.Controls.RichTextBoxEx()
+        Me.DoubleInput_MeasurementValue = New DevComponents.Editors.DoubleInput()
+        Me.Line2 = New DevComponents.DotNetBar.Controls.Line()
         Me.Line1 = New DevComponents.DotNetBar.Controls.Line()
-        Me.TextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.ComboBoxEx3 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
-        Me.ComboBoxEx2 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.TextBox_ItemName = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.TextBox_Barcode = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.TextBox_ItemCode = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.ComboBox_Model = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboBox_Brand = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
-        Me.ComboBoxEx1 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX6 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX11 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX10 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX13 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX12 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
-        Me.ComboBoxEx4 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
+        Me.ComboBox_MeasurementUnit = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboBox_StandardCode = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboBox_QuantityUnit = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboBox_MaterialType = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboBox_Categories = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.ComboBox_SubCategories = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.PanelEx1.SuspendLayout()
+        Me.panel_Picture.SuspendLayout()
+        CType(Me.PictureBox_ItemPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput_MeasurementValue, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'supergridview_RoomList
+        'SuperGridView_RecentCreate
         '
-        Me.supergridview_RoomList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.SuperGridView_RecentCreate.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.supergridview_RoomList.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding1.Left = 5
-        Padding1.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Padding = Padding1
-        Background1.Color1 = System.Drawing.Color.WhiteSmoke
-        Background1.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.MouseOver.Background = Background1
-        Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
-        Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding2.Left = 5
-        Padding2.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding2
-        Me.supergridview_RoomList.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
-        Me.supergridview_RoomList.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
-        Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding3.Left = 5
-        Padding3.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Padding = Padding3
-        Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
-        Background2.Color1 = System.Drawing.Color.WhiteSmoke
-        Background2.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background2
-        Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.supergridview_RoomList.FilterExprColors.SysFunction = System.Drawing.Color.Empty
-        Me.supergridview_RoomList.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.supergridview_RoomList.ForeColor = System.Drawing.Color.Black
-        Me.supergridview_RoomList.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
-        Me.supergridview_RoomList.Location = New System.Drawing.Point(495, 34)
-        Me.supergridview_RoomList.Name = "supergridview_RoomList"
+        Me.SuperGridView_RecentCreate.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.CellStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Padding4.Left = 5
+        Padding4.Right = 5
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.CellStyles.Default.Padding = Padding4
+        Background3.Color1 = System.Drawing.Color.WhiteSmoke
+        Background3.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.CellStyles.MouseOver.Background = Background3
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.ColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Padding5.Left = 5
+        Padding5.Right = 5
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding5
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.FooterStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.FooterStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Padding6.Left = 5
+        Padding6.Right = 5
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.FooterStyles.Default.Padding = Padding6
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.GroupHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
+        Background4.Color1 = System.Drawing.Color.WhiteSmoke
+        Background4.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background4
+        Me.SuperGridView_RecentCreate.DefaultVisualStyles.GroupHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.SuperGridView_RecentCreate.FilterExprColors.SysFunction = System.Drawing.Color.Empty
+        Me.SuperGridView_RecentCreate.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.SuperGridView_RecentCreate.ForeColor = System.Drawing.Color.Black
+        Me.SuperGridView_RecentCreate.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F"
+        Me.SuperGridView_RecentCreate.Location = New System.Drawing.Point(6, 271)
+        Me.SuperGridView_RecentCreate.Name = "SuperGridView_RecentCreate"
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.AllowEdit = False
-        Me.supergridview_RoomList.PrimaryGrid.AutoExpandSetGroup = True
+        Me.SuperGridView_RecentCreate.PrimaryGrid.AllowEdit = False
+        Me.SuperGridView_RecentCreate.PrimaryGrid.AutoExpandSetGroup = True
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.Caption.Text = ""
-        Me.supergridview_RoomList.PrimaryGrid.ColumnAutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill
+        Me.SuperGridView_RecentCreate.PrimaryGrid.Caption.RowHeight = 23
+        Me.SuperGridView_RecentCreate.PrimaryGrid.Caption.Text = "รายการสร้างล่าสุด"
+        Me.SuperGridView_RecentCreate.PrimaryGrid.ColumnAutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.ColumnHeader.RowHeight = 24
-        Me.supergridview_RoomList.PrimaryGrid.DefaultRowHeight = 24
+        Me.SuperGridView_RecentCreate.PrimaryGrid.ColumnHeader.RowHeight = 24
+        Me.SuperGridView_RecentCreate.PrimaryGrid.DefaultRowHeight = 24
+        Me.SuperGridView_RecentCreate.PrimaryGrid.DefaultVisualStyles.CaptionStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.Filter.RowHeight = 24
-        Me.supergridview_RoomList.PrimaryGrid.FocusCuesEnabled = False
+        Me.SuperGridView_RecentCreate.PrimaryGrid.Filter.RowHeight = 24
+        Me.SuperGridView_RecentCreate.PrimaryGrid.FocusCuesEnabled = False
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.Footer.RowHeight = 20
+        Me.SuperGridView_RecentCreate.PrimaryGrid.Footer.RowHeight = 20
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.GroupByRow.AllowUserSort = False
-        Me.supergridview_RoomList.PrimaryGrid.GroupByRow.Text = ""
-        Me.supergridview_RoomList.PrimaryGrid.GroupByRow.WatermarkText = "ลากและวางคอลัมน์ที่นี่เพื่อจัดกลุ่ม"
+        Me.SuperGridView_RecentCreate.PrimaryGrid.GroupByRow.AllowUserSort = False
+        Me.SuperGridView_RecentCreate.PrimaryGrid.GroupByRow.Text = ""
+        Me.SuperGridView_RecentCreate.PrimaryGrid.GroupByRow.WatermarkText = "ลากและวางคอลัมน์ที่นี่เพื่อจัดกลุ่ม"
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.Header.Text = ""
-        Me.supergridview_RoomList.PrimaryGrid.RowFocusMode = DevComponents.DotNetBar.SuperGrid.RowFocusMode.CellsOnly
-        Me.supergridview_RoomList.PrimaryGrid.RowHeaderIndexOffset = 1
-        Me.supergridview_RoomList.PrimaryGrid.RowHeaderWidth = 30
-        Me.supergridview_RoomList.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.Row
-        Me.supergridview_RoomList.PrimaryGrid.ShowGroupUnderline = False
-        Me.supergridview_RoomList.PrimaryGrid.ShowRowGridIndex = True
+        Me.SuperGridView_RecentCreate.PrimaryGrid.Header.Text = ""
+        Me.SuperGridView_RecentCreate.PrimaryGrid.RowFocusMode = DevComponents.DotNetBar.SuperGrid.RowFocusMode.CellsOnly
+        Me.SuperGridView_RecentCreate.PrimaryGrid.RowHeaderIndexOffset = 1
+        Me.SuperGridView_RecentCreate.PrimaryGrid.RowHeaderWidth = 30
+        Me.SuperGridView_RecentCreate.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.Row
+        Me.SuperGridView_RecentCreate.PrimaryGrid.ShowGroupUnderline = False
+        Me.SuperGridView_RecentCreate.PrimaryGrid.ShowRowGridIndex = True
         '
         '
         '
-        Me.supergridview_RoomList.PrimaryGrid.Title.Text = ""
-        Me.supergridview_RoomList.PrimaryGrid.TopLeftHeaderSelectBehavior = DevComponents.DotNetBar.SuperGrid.TopLeftHeaderSelectBehavior.NoSelection
-        Me.supergridview_RoomList.Size = New System.Drawing.Size(497, 610)
-        Me.supergridview_RoomList.TabIndex = 13
+        Me.SuperGridView_RecentCreate.PrimaryGrid.Title.Text = ""
+        Me.SuperGridView_RecentCreate.PrimaryGrid.TopLeftHeaderSelectBehavior = DevComponents.DotNetBar.SuperGrid.TopLeftHeaderSelectBehavior.NoSelection
+        Me.SuperGridView_RecentCreate.Size = New System.Drawing.Size(1225, 504)
+        Me.SuperGridView_RecentCreate.TabIndex = 17
         '
         'PanelEx1
         '
-        Me.PanelEx1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PanelEx1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelEx1.CanvasColor = System.Drawing.Color.Empty
         Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.PanelEx1.Controls.Add(Me.Button_FormReset)
+        Me.PanelEx1.Controls.Add(Me.Button_ItemCreate)
+        Me.PanelEx1.Controls.Add(Me.Button_PictureModify)
+        Me.PanelEx1.Controls.Add(Me.panel_Picture)
+        Me.PanelEx1.Controls.Add(Me.RichTextBox_Remark)
+        Me.PanelEx1.Controls.Add(Me.DoubleInput_MeasurementValue)
+        Me.PanelEx1.Controls.Add(Me.Line2)
         Me.PanelEx1.Controls.Add(Me.Line1)
-        Me.PanelEx1.Controls.Add(Me.TextBoxX2)
-        Me.PanelEx1.Controls.Add(Me.ComboBoxEx3)
-        Me.PanelEx1.Controls.Add(Me.LabelX3)
-        Me.PanelEx1.Controls.Add(Me.ComboBoxEx2)
+        Me.PanelEx1.Controls.Add(Me.TextBox_ItemName)
+        Me.PanelEx1.Controls.Add(Me.TextBox_Barcode)
+        Me.PanelEx1.Controls.Add(Me.TextBox_ItemCode)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_Model)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_Brand)
         Me.PanelEx1.Controls.Add(Me.LabelX2)
+        Me.PanelEx1.Controls.Add(Me.LabelX8)
+        Me.PanelEx1.Controls.Add(Me.LabelX11)
+        Me.PanelEx1.Controls.Add(Me.LabelX3)
+        Me.PanelEx1.Controls.Add(Me.LabelX10)
+        Me.PanelEx1.Controls.Add(Me.LabelX13)
+        Me.PanelEx1.Controls.Add(Me.LabelX9)
+        Me.PanelEx1.Controls.Add(Me.LabelX12)
         Me.PanelEx1.Controls.Add(Me.LabelX7)
         Me.PanelEx1.Controls.Add(Me.LabelX4)
-        Me.PanelEx1.Controls.Add(Me.ComboBoxEx4)
-        Me.PanelEx1.Controls.Add(Me.ComboBoxEx1)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_MeasurementUnit)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_StandardCode)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_QuantityUnit)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_MaterialType)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_Categories)
+        Me.PanelEx1.Controls.Add(Me.ComboBox_SubCategories)
         Me.PanelEx1.Controls.Add(Me.LabelX1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.PanelEx1.Location = New System.Drawing.Point(6, 34)
+        Me.PanelEx1.Location = New System.Drawing.Point(6, 6)
         Me.PanelEx1.Name = "PanelEx1"
         Me.PanelEx1.Padding = New System.Windows.Forms.Padding(8)
-        Me.PanelEx1.Size = New System.Drawing.Size(483, 610)
+        Me.PanelEx1.Size = New System.Drawing.Size(1225, 259)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.PanelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
@@ -160,210 +205,524 @@ Partial Class usercon_add_equipment
         Me.PanelEx1.Style.GradientAngle = 90
         Me.PanelEx1.TabIndex = 14
         '
+        'Button_FormReset
+        '
+        Me.Button_FormReset.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.Button_FormReset.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button_FormReset.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.Button_FormReset.Location = New System.Drawing.Point(1084, 211)
+        Me.Button_FormReset.Name = "Button_FormReset"
+        Me.Button_FormReset.Size = New System.Drawing.Size(130, 37)
+        Me.Button_FormReset.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.Button_FormReset.TabIndex = 16
+        Me.Button_FormReset.Text = "รีเซ็ตข้อมูล"
+        '
+        'Button_ItemCreate
+        '
+        Me.Button_ItemCreate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.Button_ItemCreate.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button_ItemCreate.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.Button_ItemCreate.Location = New System.Drawing.Point(1084, 168)
+        Me.Button_ItemCreate.Name = "Button_ItemCreate"
+        Me.Button_ItemCreate.Size = New System.Drawing.Size(130, 37)
+        Me.Button_ItemCreate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.Button_ItemCreate.TabIndex = 15
+        Me.Button_ItemCreate.Text = "สร้างรายการ"
+        '
+        'Button_PictureModify
+        '
+        Me.Button_PictureModify.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.Button_PictureModify.AutoExpandOnClick = True
+        Me.Button_PictureModify.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.Button_PictureModify.Location = New System.Drawing.Point(895, 224)
+        Me.Button_PictureModify.Name = "Button_PictureModify"
+        Me.Button_PictureModify.Size = New System.Drawing.Size(157, 23)
+        Me.Button_PictureModify.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.Button_PictureModify.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem_PictureChooseFile, Me.ButtonItem_PictureCapture, Me.ButtonItem_PictureRemove})
+        Me.Button_PictureModify.TabIndex = 14
+        Me.Button_PictureModify.Text = "จัดการรูปภาพ"
+        '
+        'ButtonItem_PictureChooseFile
+        '
+        Me.ButtonItem_PictureChooseFile.GlobalItem = False
+        Me.ButtonItem_PictureChooseFile.Name = "ButtonItem_PictureChooseFile"
+        Me.ButtonItem_PictureChooseFile.Text = "เลือกภาพจากไฟล์"
+        '
+        'ButtonItem_PictureCapture
+        '
+        Me.ButtonItem_PictureCapture.GlobalItem = False
+        Me.ButtonItem_PictureCapture.Name = "ButtonItem_PictureCapture"
+        Me.ButtonItem_PictureCapture.Text = "ถ่ายภาพจากกล้อง"
+        '
+        'ButtonItem_PictureRemove
+        '
+        Me.ButtonItem_PictureRemove.GlobalItem = False
+        Me.ButtonItem_PictureRemove.Name = "ButtonItem_PictureRemove"
+        Me.ButtonItem_PictureRemove.Text = "ลบรูปภาพ"
+        '
+        'panel_Picture
+        '
+        Me.panel_Picture.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.panel_Picture.Controls.Add(Me.PictureBox_ItemPicture)
+        Me.panel_Picture.DisabledBackColor = System.Drawing.Color.Empty
+        Me.panel_Picture.Location = New System.Drawing.Point(894, 59)
+        Me.panel_Picture.Name = "panel_Picture"
+        Me.panel_Picture.Padding = New System.Windows.Forms.Padding(1)
+        Me.panel_Picture.Size = New System.Drawing.Size(159, 159)
+        Me.panel_Picture.Style.Alignment = System.Drawing.StringAlignment.Center
+        Me.panel_Picture.Style.BackColor1.Color = System.Drawing.Color.White
+        Me.panel_Picture.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
+        Me.panel_Picture.Style.BorderColor.Color = System.Drawing.Color.LightGray
+        Me.panel_Picture.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
+        Me.panel_Picture.Style.GradientAngle = 90
+        Me.panel_Picture.TabIndex = 30
+        '
+        'PictureBox_ItemPicture
+        '
+        Me.PictureBox_ItemPicture.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox_ItemPicture.Location = New System.Drawing.Point(1, 1)
+        Me.PictureBox_ItemPicture.Name = "PictureBox_ItemPicture"
+        Me.PictureBox_ItemPicture.Size = New System.Drawing.Size(157, 157)
+        Me.PictureBox_ItemPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox_ItemPicture.TabIndex = 0
+        Me.PictureBox_ItemPicture.TabStop = False
+        '
+        'RichTextBox_Remark
+        '
+        '
+        '
+        '
+        Me.RichTextBox_Remark.BackgroundStyle.Class = "RichTextBoxBorder"
+        Me.RichTextBox_Remark.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RichTextBox_Remark.Location = New System.Drawing.Point(536, 146)
+        Me.RichTextBox_Remark.Name = "RichTextBox_Remark"
+        Me.RichTextBox_Remark.Rtf = "{\rtf1\ansi\ansicpg874\deff0\deflang1054{\fonttbl{\f0\fnil\fcharset222 Tahoma;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\f0\fs18\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.RichTextBox_Remark.Size = New System.Drawing.Size(346, 102)
+        Me.RichTextBox_Remark.TabIndex = 13
+        '
+        'DoubleInput_MeasurementValue
+        '
+        '
+        '
+        '
+        Me.DoubleInput_MeasurementValue.BackgroundStyle.BackColor = System.Drawing.Color.White
+        Me.DoubleInput_MeasurementValue.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput_MeasurementValue.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput_MeasurementValue.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput_MeasurementValue.Increment = 1.0R
+        Me.DoubleInput_MeasurementValue.Location = New System.Drawing.Point(114, 174)
+        Me.DoubleInput_MeasurementValue.Name = "DoubleInput_MeasurementValue"
+        Me.DoubleInput_MeasurementValue.ShowUpDown = True
+        Me.DoubleInput_MeasurementValue.Size = New System.Drawing.Size(172, 22)
+        Me.DoubleInput_MeasurementValue.TabIndex = 6
+        Me.DoubleInput_MeasurementValue.WatermarkText = "ระบุขนาด"
+        '
+        'Line2
+        '
+        Me.Line2.ForeColor = System.Drawing.Color.LightGray
+        Me.Line2.Location = New System.Drawing.Point(114, 202)
+        Me.Line2.Name = "Line2"
+        Me.Line2.Size = New System.Drawing.Size(346, 17)
+        Me.Line2.TabIndex = 24
+        Me.Line2.Text = "Line1"
+        '
         'Line1
         '
         Me.Line1.ForeColor = System.Drawing.Color.LightGray
-        Me.Line1.Location = New System.Drawing.Point(117, 81)
+        Me.Line1.Location = New System.Drawing.Point(114, 39)
         Me.Line1.Name = "Line1"
-        Me.Line1.Size = New System.Drawing.Size(352, 14)
+        Me.Line1.Size = New System.Drawing.Size(768, 16)
         Me.Line1.TabIndex = 24
         Me.Line1.Text = "Line1"
         '
-        'TextBoxX2
+        'TextBox_ItemName
         '
-        Me.TextBoxX2.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.TextBoxX2.Border.Class = "TextBoxBorder"
-        Me.TextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TextBoxX2.DisabledBackColor = System.Drawing.Color.White
-        Me.TextBoxX2.ForeColor = System.Drawing.Color.Black
-        Me.TextBoxX2.Location = New System.Drawing.Point(117, 53)
-        Me.TextBoxX2.Name = "TextBoxX2"
-        Me.TextBoxX2.PreventEnterBeep = True
-        Me.TextBoxX2.Size = New System.Drawing.Size(352, 22)
-        Me.TextBoxX2.TabIndex = 23
-        '
-        'ComboBoxEx3
-        '
-        Me.ComboBoxEx3.DisplayMember = "Text"
-        Me.ComboBoxEx3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.ComboBoxEx3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBoxEx3.ForeColor = System.Drawing.Color.Black
-        Me.ComboBoxEx3.FormattingEnabled = True
-        Me.ComboBoxEx3.ItemHeight = 17
-        Me.ComboBoxEx3.Location = New System.Drawing.Point(117, 187)
-        Me.ComboBoxEx3.Name = "ComboBoxEx3"
-        Me.ComboBoxEx3.Size = New System.Drawing.Size(352, 23)
-        Me.ComboBoxEx3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ComboBoxEx3.TabIndex = 22
-        '
-        'LabelX3
+        Me.TextBox_ItemName.BackColor = System.Drawing.Color.White
         '
         '
         '
+        Me.TextBox_ItemName.Border.Class = "TextBoxBorder"
+        Me.TextBox_ItemName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBox_ItemName.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBox_ItemName.ForeColor = System.Drawing.Color.Black
+        Me.TextBox_ItemName.Location = New System.Drawing.Point(114, 59)
+        Me.TextBox_ItemName.Name = "TextBox_ItemName"
+        Me.TextBox_ItemName.PreventEnterBeep = True
+        Me.TextBox_ItemName.Size = New System.Drawing.Size(346, 22)
+        Me.TextBox_ItemName.TabIndex = 2
+        Me.TextBox_ItemName.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.TextBox_ItemName.WatermarkText = "ระบุชื่อรายการ"
         '
-        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX3.Location = New System.Drawing.Point(11, 187)
-        Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX3.Size = New System.Drawing.Size(100, 22)
-        Me.LabelX3.TabIndex = 17
-        Me.LabelX3.Text = "ผู้ผลิต/ผู้จำหน่าย :"
+        'TextBox_Barcode
         '
-        'ComboBoxEx2
+        Me.TextBox_Barcode.BackColor = System.Drawing.Color.White
         '
-        Me.ComboBoxEx2.DisplayMember = "Text"
-        Me.ComboBoxEx2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.ComboBoxEx2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBoxEx2.ForeColor = System.Drawing.Color.Black
-        Me.ComboBoxEx2.FormattingEnabled = True
-        Me.ComboBoxEx2.ItemHeight = 17
-        Me.ComboBoxEx2.Location = New System.Drawing.Point(117, 158)
-        Me.ComboBoxEx2.Name = "ComboBoxEx2"
-        Me.ComboBoxEx2.Size = New System.Drawing.Size(352, 23)
-        Me.ComboBoxEx2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ComboBoxEx2.TabIndex = 21
+        '
+        '
+        Me.TextBox_Barcode.Border.Class = "TextBoxBorder"
+        Me.TextBox_Barcode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBox_Barcode.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBox_Barcode.ForeColor = System.Drawing.Color.Black
+        Me.TextBox_Barcode.Location = New System.Drawing.Point(114, 225)
+        Me.TextBox_Barcode.Name = "TextBox_Barcode"
+        Me.TextBox_Barcode.PreventEnterBeep = True
+        Me.TextBox_Barcode.Size = New System.Drawing.Size(346, 22)
+        Me.TextBox_Barcode.TabIndex = 8
+        Me.TextBox_Barcode.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.TextBox_Barcode.WatermarkText = "ระบุรหัสบาร์โค้ด"
+        '
+        'TextBox_ItemCode
+        '
+        Me.TextBox_ItemCode.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.TextBox_ItemCode.Border.Class = "TextBoxBorder"
+        Me.TextBox_ItemCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBox_ItemCode.DisabledBackColor = System.Drawing.Color.White
+        Me.TextBox_ItemCode.ForeColor = System.Drawing.Color.Black
+        Me.TextBox_ItemCode.Location = New System.Drawing.Point(114, 11)
+        Me.TextBox_ItemCode.Name = "TextBox_ItemCode"
+        Me.TextBox_ItemCode.PreventEnterBeep = True
+        Me.TextBox_ItemCode.ReadOnly = True
+        Me.TextBox_ItemCode.Size = New System.Drawing.Size(346, 22)
+        Me.TextBox_ItemCode.TabIndex = 1
+        '
+        'ComboBox_Model
+        '
+        Me.ComboBox_Model.DisplayMember = "Text"
+        Me.ComboBox_Model.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_Model.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_Model.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_Model.FormattingEnabled = True
+        Me.ComboBox_Model.ItemHeight = 17
+        Me.ComboBox_Model.Location = New System.Drawing.Point(714, 117)
+        Me.ComboBox_Model.Name = "ComboBox_Model"
+        Me.ComboBox_Model.Size = New System.Drawing.Size(168, 23)
+        Me.ComboBox_Model.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_Model.TabIndex = 12
+        Me.ComboBox_Model.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_Model.WatermarkText = "ระบุรุ่น"
+        '
+        'ComboBox_Brand
+        '
+        Me.ComboBox_Brand.DisplayMember = "Text"
+        Me.ComboBox_Brand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_Brand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_Brand.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_Brand.FormattingEnabled = True
+        Me.ComboBox_Brand.ItemHeight = 17
+        Me.ComboBox_Brand.Location = New System.Drawing.Point(536, 117)
+        Me.ComboBox_Brand.Name = "ComboBox_Brand"
+        Me.ComboBox_Brand.Size = New System.Drawing.Size(172, 23)
+        Me.ComboBox_Brand.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_Brand.TabIndex = 11
+        Me.ComboBox_Brand.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_Brand.WatermarkText = "ระบุยี่ห้อ"
         '
         'LabelX2
         '
+        Me.LabelX2.AutoSize = True
         '
         '
         '
         Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Location = New System.Drawing.Point(11, 158)
+        Me.LabelX2.Location = New System.Drawing.Point(472, 119)
         Me.LabelX2.Name = "LabelX2"
         Me.LabelX2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX2.Size = New System.Drawing.Size(100, 22)
+        Me.LabelX2.Size = New System.Drawing.Size(50, 17)
         Me.LabelX2.TabIndex = 16
-        Me.LabelX2.Text = "กลุ่ม :"
+        Me.LabelX2.Text = "ยี่ห้อ/รุ่น :"
         '
-        'LabelX4
+        'LabelX8
         '
-        '
-        '
-        '
-        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX4.Location = New System.Drawing.Point(11, 53)
-        Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX4.Size = New System.Drawing.Size(100, 22)
-        Me.LabelX4.TabIndex = 18
-        Me.LabelX4.Text = "รหัสรายการ :"
-        '
-        'ComboBoxEx1
-        '
-        Me.ComboBoxEx1.DisplayMember = "Text"
-        Me.ComboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.ComboBoxEx1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBoxEx1.ForeColor = System.Drawing.Color.Black
-        Me.ComboBoxEx1.FormattingEnabled = True
-        Me.ComboBoxEx1.ItemHeight = 17
-        Me.ComboBoxEx1.Location = New System.Drawing.Point(117, 130)
-        Me.ComboBoxEx1.Name = "ComboBoxEx1"
-        Me.ComboBoxEx1.Size = New System.Drawing.Size(352, 23)
-        Me.ComboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ComboBoxEx1.TabIndex = 20
-        '
-        'LabelX1
+        Me.LabelX8.AutoSize = True
         '
         '
         '
+        Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX8.Location = New System.Drawing.Point(12, 61)
+        Me.LabelX8.Name = "LabelX8"
+        Me.LabelX8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX8.Size = New System.Drawing.Size(61, 17)
+        Me.LabelX8.TabIndex = 18
+        Me.LabelX8.Text = "ชื่อรายการ :"
         '
-        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Location = New System.Drawing.Point(11, 130)
-        Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX1.Size = New System.Drawing.Size(100, 22)
-        Me.LabelX1.TabIndex = 19
-        Me.LabelX1.Text = "หมวดหมู่ :"
+        'LabelX11
         '
-        'LabelX5
-        '
-        '
-        '
-        '
-        Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX5.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.LabelX5.Location = New System.Drawing.Point(6, 6)
-        Me.LabelX5.Name = "LabelX5"
-        Me.LabelX5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX5.Size = New System.Drawing.Size(100, 22)
-        Me.LabelX5.TabIndex = 25
-        Me.LabelX5.Text = "เพิ่มรายการใหม่"
-        '
-        'LabelX6
+        Me.LabelX11.AutoSize = True
         '
         '
         '
+        Me.LabelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX11.Location = New System.Drawing.Point(12, 177)
+        Me.LabelX11.Name = "LabelX11"
+        Me.LabelX11.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX11.Size = New System.Drawing.Size(84, 17)
+        Me.LabelX11.TabIndex = 18
+        Me.LabelX11.Text = "ขนาด/หน่วยวัด :"
         '
-        Me.LabelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX6.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.LabelX6.Location = New System.Drawing.Point(495, 6)
-        Me.LabelX6.Name = "LabelX6"
-        Me.LabelX6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX6.Size = New System.Drawing.Size(107, 22)
-        Me.LabelX6.TabIndex = 25
-        Me.LabelX6.Text = "รายการที่เพิ่มล่าสุด"
+        'LabelX3
+        '
+        Me.LabelX3.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX3.Location = New System.Drawing.Point(12, 148)
+        Me.LabelX3.Name = "LabelX3"
+        Me.LabelX3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX3.Size = New System.Drawing.Size(56, 17)
+        Me.LabelX3.TabIndex = 18
+        Me.LabelX3.Text = "มาตรฐาน :"
+        '
+        'LabelX10
+        '
+        Me.LabelX10.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX10.Location = New System.Drawing.Point(472, 90)
+        Me.LabelX10.Name = "LabelX10"
+        Me.LabelX10.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX10.Size = New System.Drawing.Size(54, 17)
+        Me.LabelX10.TabIndex = 18
+        Me.LabelX10.Text = "หน่วยนับ :"
+        '
+        'LabelX13
+        '
+        Me.LabelX13.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX13.Location = New System.Drawing.Point(472, 148)
+        Me.LabelX13.Name = "LabelX13"
+        Me.LabelX13.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX13.Size = New System.Drawing.Size(58, 17)
+        Me.LabelX13.TabIndex = 18
+        Me.LabelX13.Text = "หมายเหตุ :"
+        '
+        'LabelX9
+        '
+        Me.LabelX9.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX9.Location = New System.Drawing.Point(472, 61)
+        Me.LabelX9.Name = "LabelX9"
+        Me.LabelX9.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX9.Size = New System.Drawing.Size(31, 17)
+        Me.LabelX9.TabIndex = 18
+        Me.LabelX9.Text = "วัสดุ :"
+        '
+        'LabelX12
+        '
+        Me.LabelX12.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX12.Location = New System.Drawing.Point(12, 227)
+        Me.LabelX12.Name = "LabelX12"
+        Me.LabelX12.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX12.Size = New System.Drawing.Size(70, 17)
+        Me.LabelX12.TabIndex = 18
+        Me.LabelX12.Text = "รหัสบาร์โค้ด :"
         '
         'LabelX7
         '
+        Me.LabelX7.AutoSize = True
         '
         '
         '
         Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX7.Location = New System.Drawing.Point(11, 102)
+        Me.LabelX7.Location = New System.Drawing.Point(12, 90)
         Me.LabelX7.Name = "LabelX7"
         Me.LabelX7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX7.Size = New System.Drawing.Size(100, 22)
+        Me.LabelX7.Size = New System.Drawing.Size(77, 17)
         Me.LabelX7.TabIndex = 18
-        Me.LabelX7.Text = "ประเภท :"
+        Me.LabelX7.Text = "หมวดหมู่หลัก :"
         '
-        'ComboBoxEx4
+        'LabelX4
         '
-        Me.ComboBoxEx4.DisplayMember = "Text"
-        Me.ComboBoxEx4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.ComboBoxEx4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBoxEx4.ForeColor = System.Drawing.Color.Black
-        Me.ComboBoxEx4.FormattingEnabled = True
-        Me.ComboBoxEx4.ItemHeight = 17
-        Me.ComboBoxEx4.Location = New System.Drawing.Point(117, 101)
-        Me.ComboBoxEx4.Name = "ComboBoxEx4"
-        Me.ComboBoxEx4.Size = New System.Drawing.Size(352, 23)
-        Me.ComboBoxEx4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ComboBoxEx4.TabIndex = 20
+        Me.LabelX4.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX4.Location = New System.Drawing.Point(12, 13)
+        Me.LabelX4.Name = "LabelX4"
+        Me.LabelX4.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX4.Size = New System.Drawing.Size(67, 17)
+        Me.LabelX4.TabIndex = 18
+        Me.LabelX4.Text = "รหัสรายการ :"
+        '
+        'ComboBox_MeasurementUnit
+        '
+        Me.ComboBox_MeasurementUnit.DisplayMember = "Text"
+        Me.ComboBox_MeasurementUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_MeasurementUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_MeasurementUnit.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_MeasurementUnit.FormattingEnabled = True
+        Me.ComboBox_MeasurementUnit.ItemHeight = 17
+        Me.ComboBox_MeasurementUnit.Location = New System.Drawing.Point(292, 174)
+        Me.ComboBox_MeasurementUnit.Name = "ComboBox_MeasurementUnit"
+        Me.ComboBox_MeasurementUnit.Size = New System.Drawing.Size(168, 23)
+        Me.ComboBox_MeasurementUnit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_MeasurementUnit.TabIndex = 7
+        Me.ComboBox_MeasurementUnit.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_MeasurementUnit.WatermarkText = "ระบุหน่วยวัด"
+        '
+        'ComboBox_StandardCode
+        '
+        Me.ComboBox_StandardCode.DisplayMember = "Text"
+        Me.ComboBox_StandardCode.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_StandardCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_StandardCode.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_StandardCode.FormattingEnabled = True
+        Me.ComboBox_StandardCode.ItemHeight = 17
+        Me.ComboBox_StandardCode.Location = New System.Drawing.Point(114, 145)
+        Me.ComboBox_StandardCode.Name = "ComboBox_StandardCode"
+        Me.ComboBox_StandardCode.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_StandardCode.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_StandardCode.TabIndex = 5
+        Me.ComboBox_StandardCode.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_StandardCode.WatermarkText = "ระบุมาตรฐาน"
+        '
+        'ComboBox_QuantityUnit
+        '
+        Me.ComboBox_QuantityUnit.DisplayMember = "Text"
+        Me.ComboBox_QuantityUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_QuantityUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_QuantityUnit.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_QuantityUnit.FormattingEnabled = True
+        Me.ComboBox_QuantityUnit.ItemHeight = 17
+        Me.ComboBox_QuantityUnit.Location = New System.Drawing.Point(536, 88)
+        Me.ComboBox_QuantityUnit.Name = "ComboBox_QuantityUnit"
+        Me.ComboBox_QuantityUnit.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_QuantityUnit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_QuantityUnit.TabIndex = 10
+        Me.ComboBox_QuantityUnit.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_QuantityUnit.WatermarkText = "ระบุหน่วยนับจำนวน"
+        '
+        'ComboBox_MaterialType
+        '
+        Me.ComboBox_MaterialType.DisplayMember = "Text"
+        Me.ComboBox_MaterialType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_MaterialType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_MaterialType.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_MaterialType.FormattingEnabled = True
+        Me.ComboBox_MaterialType.ItemHeight = 17
+        Me.ComboBox_MaterialType.Location = New System.Drawing.Point(536, 59)
+        Me.ComboBox_MaterialType.Name = "ComboBox_MaterialType"
+        Me.ComboBox_MaterialType.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_MaterialType.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_MaterialType.TabIndex = 9
+        Me.ComboBox_MaterialType.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_MaterialType.WatermarkText = "ระบุวัสดุ"
+        '
+        'ComboBox_Categories
+        '
+        Me.ComboBox_Categories.DisplayMember = "Text"
+        Me.ComboBox_Categories.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_Categories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_Categories.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_Categories.FormattingEnabled = True
+        Me.ComboBox_Categories.ItemHeight = 17
+        Me.ComboBox_Categories.Location = New System.Drawing.Point(114, 87)
+        Me.ComboBox_Categories.Name = "ComboBox_Categories"
+        Me.ComboBox_Categories.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_Categories.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_Categories.TabIndex = 3
+        Me.ComboBox_Categories.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_Categories.WatermarkText = "ระบุหมวดหมู่รายการ (จำเป็นต้องระบุ)"
+        '
+        'ComboBox_SubCategories
+        '
+        Me.ComboBox_SubCategories.DisplayMember = "Text"
+        Me.ComboBox_SubCategories.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.ComboBox_SubCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox_SubCategories.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox_SubCategories.FormattingEnabled = True
+        Me.ComboBox_SubCategories.ItemHeight = 17
+        Me.ComboBox_SubCategories.Location = New System.Drawing.Point(114, 116)
+        Me.ComboBox_SubCategories.Name = "ComboBox_SubCategories"
+        Me.ComboBox_SubCategories.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_SubCategories.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ComboBox_SubCategories.TabIndex = 4
+        Me.ComboBox_SubCategories.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
+        Me.ComboBox_SubCategories.WatermarkText = "ระบุหมวดหมู่ย่อย"
+        '
+        'LabelX1
+        '
+        Me.LabelX1.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Location = New System.Drawing.Point(12, 119)
+        Me.LabelX1.Name = "LabelX1"
+        Me.LabelX1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX1.Size = New System.Drawing.Size(75, 17)
+        Me.LabelX1.TabIndex = 19
+        Me.LabelX1.Text = "หมวดหมู่ย่อย :"
         '
         'usercon_add_equipment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.Controls.Add(Me.LabelX6)
-        Me.Controls.Add(Me.LabelX5)
         Me.Controls.Add(Me.PanelEx1)
-        Me.Controls.Add(Me.supergridview_RoomList)
+        Me.Controls.Add(Me.SuperGridView_RecentCreate)
         Me.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Name = "usercon_add_equipment"
         Me.Padding = New System.Windows.Forms.Padding(3)
-        Me.Size = New System.Drawing.Size(998, 650)
+        Me.Size = New System.Drawing.Size(1237, 781)
         Me.PanelEx1.ResumeLayout(False)
+        Me.PanelEx1.PerformLayout()
+        Me.panel_Picture.ResumeLayout(False)
+        CType(Me.PictureBox_ItemPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput_MeasurementValue, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents supergridview_RoomList As DevComponents.DotNetBar.SuperGrid.SuperGridControl
+    Friend WithEvents SuperGridView_RecentCreate As DevComponents.DotNetBar.SuperGrid.SuperGridControl
     Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
     Friend WithEvents Line1 As DevComponents.DotNetBar.Controls.Line
-    Friend WithEvents TextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents ComboBoxEx3 As DevComponents.DotNetBar.Controls.ComboBoxEx
-    Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents ComboBoxEx2 As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents TextBox_ItemCode As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents ComboBox_Model As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents ComboBox_Brand As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX4 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents ComboBoxEx1 As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents ComboBox_SubCategories As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX5 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX6 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX7 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents ComboBoxEx4 As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents ComboBox_Categories As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents TextBox_ItemName As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents LabelX8 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX11 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX10 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents ComboBox_MeasurementUnit As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents ComboBox_QuantityUnit As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents ComboBox_MaterialType As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents DoubleInput_MeasurementValue As DevComponents.Editors.DoubleInput
+    Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents ComboBox_StandardCode As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents Line2 As DevComponents.DotNetBar.Controls.Line
+    Friend WithEvents TextBox_Barcode As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents LabelX13 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX12 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents RichTextBox_Remark As DevComponents.DotNetBar.Controls.RichTextBoxEx
+    Friend WithEvents panel_Picture As DevComponents.DotNetBar.PanelEx
+    Friend WithEvents PictureBox_ItemPicture As System.Windows.Forms.PictureBox
+    Friend WithEvents Button_PictureModify As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents Button_ItemCreate As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents Button_FormReset As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonItem_PictureChooseFile As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem_PictureCapture As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem_PictureRemove As DevComponents.DotNetBar.ButtonItem
 
 End Class

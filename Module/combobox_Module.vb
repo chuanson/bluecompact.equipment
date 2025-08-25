@@ -20,9 +20,17 @@ Module ComboBox_Module
                 Dim dt As New DataTable()
                 adapter.Fill(dt)
 
+                ' เพิ่มแถวว่างไว้ด้านบน
+                Dim newRow As DataRow = dt.NewRow()
+                newRow(displayField) = "ไม่ระบุ"
+                newRow(valueField) = DBNull.Value
+                dt.Rows.InsertAt(newRow, 0)
+
                 comboBox.DisplayMember = displayField
                 comboBox.ValueMember = valueField
                 comboBox.DataSource = dt
+
+                comboBox.SelectedIndex = -1
             End Using
         Catch ex As Exception
             MessageBox.Show("เกิดข้อผิดพลาดในการโหลดข้อมูล: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

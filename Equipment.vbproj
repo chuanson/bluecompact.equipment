@@ -295,6 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="equipment.ico" />
+    <None Include="Icon\Ribbon\create_item.png" />
     <None Include="Icon\Task Dialog\warning_m.png" />
     <None Include="Icon\Task Dialog\question_m.png" />
     <None Include="Icon\Task Dialog\logout_m.png" />

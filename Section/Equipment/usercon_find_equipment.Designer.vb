@@ -22,26 +22,19 @@ Partial Class usercon_find_equipment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim Padding7 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Background5 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
-        Dim Padding8 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Padding9 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
-        Dim Background6 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim Padding1 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
         Dim Background1 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Dim Padding2 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
         Dim Padding3 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
         Dim Background2 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Padding4 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Background3 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
+        Dim Padding5 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Padding6 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
+        Dim Background4 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.toolbar_RoomAction = New DevComponents.DotNetBar.Bar()
-        Me.toolbar_RoomAction_Add = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_ViewEdit = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_Del = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_Refresh = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_Print = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_Export = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_ExportXls = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_Ungroup = New DevComponents.DotNetBar.ButtonItem()
-        Me.toolbar_RoomAction_TabClose = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem_Refresh = New DevComponents.DotNetBar.ButtonItem()
+        Me.CheckBoxItem_ShowStockInfo = New DevComponents.DotNetBar.CheckBoxItem()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.Line1 = New DevComponents.DotNetBar.Controls.Line()
         Me.TextBox_TextSearch = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -60,6 +53,7 @@ Partial Class usercon_find_equipment
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.supergridview_RoomList = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
         Me.SuperGridView_Items = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
+        Me.CheckBox_ShowStockInfo = New DevComponents.DotNetBar.Controls.CheckBoxX()
         CType(Me.toolbar_RoomAction, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx1.SuspendLayout()
         Me.SuspendLayout()
@@ -73,7 +67,7 @@ Partial Class usercon_find_equipment
         Me.toolbar_RoomAction.BarType = DevComponents.DotNetBar.eBarType.MenuBar
         Me.toolbar_RoomAction.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.toolbar_RoomAction.IsMaximized = False
-        Me.toolbar_RoomAction.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.toolbar_RoomAction_Add, Me.toolbar_RoomAction_ViewEdit, Me.toolbar_RoomAction_Del, Me.toolbar_RoomAction_Refresh, Me.toolbar_RoomAction_Print, Me.toolbar_RoomAction_Export, Me.toolbar_RoomAction_Ungroup, Me.toolbar_RoomAction_TabClose})
+        Me.toolbar_RoomAction.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.CheckBoxItem_ShowStockInfo, Me.ButtonItem_Refresh})
         Me.toolbar_RoomAction.ItemSpacing = 5
         Me.toolbar_RoomAction.Location = New System.Drawing.Point(6, 164)
         Me.toolbar_RoomAction.Name = "toolbar_RoomAction"
@@ -83,69 +77,17 @@ Partial Class usercon_find_equipment
         Me.toolbar_RoomAction.TabIndex = 12
         Me.toolbar_RoomAction.TabStop = False
         '
-        'toolbar_RoomAction_Add
+        'ButtonItem_Refresh
         '
-        Me.toolbar_RoomAction_Add.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_Add.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_Add.Name = "toolbar_RoomAction_Add"
-        Me.toolbar_RoomAction_Add.Text = "เพิ่มรายการใหม่"
+        Me.ButtonItem_Refresh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem_Refresh.ImagePaddingHorizontal = 10
+        Me.ButtonItem_Refresh.Name = "ButtonItem_Refresh"
+        Me.ButtonItem_Refresh.Text = "รีเฟรชรายการ"
         '
-        'toolbar_RoomAction_ViewEdit
+        'CheckBoxItem_ShowStockInfo
         '
-        Me.toolbar_RoomAction_ViewEdit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_ViewEdit.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_ViewEdit.Name = "toolbar_RoomAction_ViewEdit"
-        Me.toolbar_RoomAction_ViewEdit.Text = "แก้ไขรายการ"
-        '
-        'toolbar_RoomAction_Del
-        '
-        Me.toolbar_RoomAction_Del.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_Del.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_Del.Name = "toolbar_RoomAction_Del"
-        Me.toolbar_RoomAction_Del.Text = "ลบรายการ"
-        '
-        'toolbar_RoomAction_Refresh
-        '
-        Me.toolbar_RoomAction_Refresh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_Refresh.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_Refresh.Name = "toolbar_RoomAction_Refresh"
-        Me.toolbar_RoomAction_Refresh.Text = "รีเฟรชรายการ"
-        '
-        'toolbar_RoomAction_Print
-        '
-        Me.toolbar_RoomAction_Print.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_Print.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_Print.Name = "toolbar_RoomAction_Print"
-        Me.toolbar_RoomAction_Print.Text = "พิมพ์รายการ"
-        '
-        'toolbar_RoomAction_Export
-        '
-        Me.toolbar_RoomAction_Export.AutoExpandOnClick = True
-        Me.toolbar_RoomAction_Export.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_Export.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_Export.Name = "toolbar_RoomAction_Export"
-        Me.toolbar_RoomAction_Export.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.toolbar_RoomAction_ExportXls})
-        Me.toolbar_RoomAction_Export.Text = "ส่งออกรายการ"
-        '
-        'toolbar_RoomAction_ExportXls
-        '
-        Me.toolbar_RoomAction_ExportXls.Name = "toolbar_RoomAction_ExportXls"
-        Me.toolbar_RoomAction_ExportXls.Text = "บันทึกเป็นไฟล์ .xls"
-        '
-        'toolbar_RoomAction_Ungroup
-        '
-        Me.toolbar_RoomAction_Ungroup.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_Ungroup.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_Ungroup.Name = "toolbar_RoomAction_Ungroup"
-        Me.toolbar_RoomAction_Ungroup.Text = "ยกเลิกจัดกลุ่ม"
-        Me.toolbar_RoomAction_Ungroup.Visible = False
-        '
-        'toolbar_RoomAction_TabClose
-        '
-        Me.toolbar_RoomAction_TabClose.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.toolbar_RoomAction_TabClose.ImagePaddingHorizontal = 10
-        Me.toolbar_RoomAction_TabClose.Name = "toolbar_RoomAction_TabClose"
-        Me.toolbar_RoomAction_TabClose.Text = "ปิดแท็บ"
+        Me.CheckBoxItem_ShowStockInfo.Name = "CheckBoxItem_ShowStockInfo"
+        Me.CheckBoxItem_ShowStockInfo.Text = "แสดงข้อมูลสต็อก"
         '
         'PanelEx1
         '
@@ -405,28 +347,28 @@ Partial Class usercon_find_equipment
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.supergridview_RoomList.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding7.Left = 5
-        Padding7.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Padding = Padding7
-        Background5.Color1 = System.Drawing.Color.WhiteSmoke
-        Background5.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.MouseOver.Background = Background5
+        Padding1.Left = 5
+        Padding1.Right = 5
+        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.Default.Padding = Padding1
+        Background1.Color1 = System.Drawing.Color.WhiteSmoke
+        Background1.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.supergridview_RoomList.DefaultVisualStyles.CellStyles.MouseOver.Background = Background1
         Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding8.Left = 5
-        Padding8.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding8
+        Padding2.Left = 5
+        Padding2.Right = 5
+        Me.supergridview_RoomList.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding2
         Me.supergridview_RoomList.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.supergridview_RoomList.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding9.Left = 5
-        Padding9.Right = 5
-        Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Padding = Padding9
+        Padding3.Left = 5
+        Padding3.Right = 5
+        Me.supergridview_RoomList.DefaultVisualStyles.FooterStyles.Default.Padding = Padding3
         Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
-        Background6.Color1 = System.Drawing.Color.WhiteSmoke
-        Background6.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background6
+        Background2.Color1 = System.Drawing.Color.WhiteSmoke
+        Background2.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background2
         Me.supergridview_RoomList.DefaultVisualStyles.GroupHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.supergridview_RoomList.FilterExprColors.SysFunction = System.Drawing.Color.Empty
         Me.supergridview_RoomList.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
@@ -490,28 +432,28 @@ Partial Class usercon_find_equipment
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SuperGridView_Items.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.SuperGridView_Items.DefaultVisualStyles.CellStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding1.Left = 5
-        Padding1.Right = 5
-        Me.SuperGridView_Items.DefaultVisualStyles.CellStyles.Default.Padding = Padding1
-        Background1.Color1 = System.Drawing.Color.WhiteSmoke
-        Background1.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.SuperGridView_Items.DefaultVisualStyles.CellStyles.MouseOver.Background = Background1
+        Padding4.Left = 5
+        Padding4.Right = 5
+        Me.SuperGridView_Items.DefaultVisualStyles.CellStyles.Default.Padding = Padding4
+        Background3.Color1 = System.Drawing.Color.WhiteSmoke
+        Background3.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.SuperGridView_Items.DefaultVisualStyles.CellStyles.MouseOver.Background = Background3
         Me.SuperGridView_Items.DefaultVisualStyles.ColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.SuperGridView_Items.DefaultVisualStyles.ColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding2.Left = 5
-        Padding2.Right = 5
-        Me.SuperGridView_Items.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding2
+        Padding5.Left = 5
+        Padding5.Right = 5
+        Me.SuperGridView_Items.DefaultVisualStyles.ColumnHeaderStyles.Default.Padding = Padding5
         Me.SuperGridView_Items.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.SuperGridView_Items.DefaultVisualStyles.FilterColumnHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.SuperGridView_Items.DefaultVisualStyles.FooterStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
         Me.SuperGridView_Items.DefaultVisualStyles.FooterStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Padding3.Left = 5
-        Padding3.Right = 5
-        Me.SuperGridView_Items.DefaultVisualStyles.FooterStyles.Default.Padding = Padding3
+        Padding6.Left = 5
+        Padding6.Right = 5
+        Me.SuperGridView_Items.DefaultVisualStyles.FooterStyles.Default.Padding = Padding6
         Me.SuperGridView_Items.DefaultVisualStyles.GroupHeaderStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.MiddleLeft
-        Background2.Color1 = System.Drawing.Color.WhiteSmoke
-        Background2.Color2 = System.Drawing.Color.WhiteSmoke
-        Me.SuperGridView_Items.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background2
+        Background4.Color1 = System.Drawing.Color.WhiteSmoke
+        Background4.Color2 = System.Drawing.Color.WhiteSmoke
+        Me.SuperGridView_Items.DefaultVisualStyles.GroupHeaderStyles.Default.Background = Background4
         Me.SuperGridView_Items.DefaultVisualStyles.GroupHeaderStyles.Default.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.SuperGridView_Items.FilterExprColors.SysFunction = System.Drawing.Color.Empty
         Me.SuperGridView_Items.ForeColor = System.Drawing.Color.Black
@@ -563,6 +505,23 @@ Partial Class usercon_find_equipment
         Me.SuperGridView_Items.TabIndex = 18
         Me.SuperGridView_Items.Text = "SuperGridControl1"
         '
+        'CheckBox_ShowStockInfo
+        '
+        Me.CheckBox_ShowStockInfo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox_ShowStockInfo.AutoSize = True
+        '
+        '
+        '
+        Me.CheckBox_ShowStockInfo.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.CheckBox_ShowStockInfo.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.CheckBox_ShowStockInfo.Location = New System.Drawing.Point(3, 3)
+        Me.CheckBox_ShowStockInfo.Name = "CheckBox_ShowStockInfo"
+        Me.CheckBox_ShowStockInfo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CheckBox_ShowStockInfo.Size = New System.Drawing.Size(108, 17)
+        Me.CheckBox_ShowStockInfo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.CheckBox_ShowStockInfo.TabIndex = 25
+        Me.CheckBox_ShowStockInfo.Text = "แสดงข้อมูลสต็อก"
+        '
         'usercon_find_equipment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -579,15 +538,7 @@ Partial Class usercon_find_equipment
 
     End Sub
     Friend WithEvents toolbar_RoomAction As DevComponents.DotNetBar.Bar
-    Friend WithEvents toolbar_RoomAction_Add As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_ViewEdit As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_Del As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_Refresh As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_Print As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_Export As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_ExportXls As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_Ungroup As DevComponents.DotNetBar.ButtonItem
-    Friend WithEvents toolbar_RoomAction_TabClose As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents ButtonItem_Refresh As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
     Friend WithEvents Line1 As DevComponents.DotNetBar.Controls.Line
     Friend WithEvents TextBox_TextSearch As DevComponents.DotNetBar.Controls.TextBoxX
@@ -606,5 +557,7 @@ Partial Class usercon_find_equipment
     Friend WithEvents ComboBoxEx6 As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents supergridview_RoomList As DevComponents.DotNetBar.SuperGrid.SuperGridControl
     Friend WithEvents SuperGridView_Items As DevComponents.DotNetBar.SuperGrid.SuperGridControl
+    Friend WithEvents CheckBox_ShowStockInfo As DevComponents.DotNetBar.Controls.CheckBoxX
+    Friend WithEvents CheckBoxItem_ShowStockInfo As DevComponents.DotNetBar.CheckBoxItem
 
 End Class

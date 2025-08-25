@@ -4,6 +4,8 @@ Imports System.Data.SQLite
 Public Class frm_Main
 
     Dim ConnectionString As String
+    Dim WarehouseID As String
+
     Private Sub frm_Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' load_Database()
         ConnectionString = "Data Source=" & Application.StartupPath & "\Database\dbEquipment.db;Version=3;"
@@ -52,6 +54,14 @@ Public Class frm_Main
     Private Sub ButtonItem_FindItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem_FindItem.Click
         Dim UserControl As New usercon_find_equipment
         UserControl.ConnectionString = ConnectionString
+        WarehouseID = "1"
+        UserControl.WarehouseID = WarehouseID
         OpenNewTab(UserControl, "ค้นหารายการ")
+    End Sub
+
+    Private Sub ButtonItem_AddItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem_AddItem.Click
+        Dim UserControl As New usercon_add_equipment
+        UserControl.ConnectionString = ConnectionString
+        OpenNewTab(UserControl, "สร้างรายการใหม่")
     End Sub
 End Class
