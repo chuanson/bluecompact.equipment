@@ -16,7 +16,36 @@ Public Class usercon_find_equipment
     ' *********************************************************************'
 
     Private Sub usercon_find_equipment_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Load_Combobox()
         load_Items()
+    End Sub
+
+    ' เพิ่มรายการใน ComboBox
+    Private Sub Load_Combobox()
+        LoadComboBoxData(ComboBox_Locations, ConnectionString, "SELECT LocationID, LocationName FROM Locations WHERE WarehouseID = '" & WarehouseID & "'", "LocationName", "LocationID")
+        LoadComboBoxData(ComboBox_Categories, ConnectionString, "SELECT CategoryID, CategoryName FROM Categories", "CategoryName", "CategoryID")
+        LoadComboBoxData(ComboBox_StandardCode, ConnectionString, "SELECT StandardID, StandardCode FROM Standards", "StandardCode", "StandardID")
+        LoadComboBoxData(ComboBox_Supplier, ConnectionString, "SELECT SupplierID, SupplierName FROM Suppliers", "SupplierName", "SupplierID")
+        LoadComboBoxData(ComboBox_MaterialType, ConnectionString, "SELECT MaterialTypeID, MaterialTypeNameTH FROM MaterialTypes", "MaterialTypeNameTH", "MaterialTypeID")
+        LoadComboBoxData(ComboBox_Brand, ConnectionString, "SELECT BrandID, BrandName FROM Brands", "BrandName", "BrandID")
+
+        ' ล้างข้อมูล SubCategory ก่อน
+        ComboBox_SubCategories.DataSource = Nothing
+    End Sub
+
+    Private Sub ComboBox_Categories_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox_Categories.SelectedIndexChanged
+        If ComboBox_Categories.SelectedValue Is Nothing OrElse
+           TypeOf ComboBox_Categories.SelectedValue Is DataRowView Then
+            Exit Sub
+        End If
+
+        Dim CategoryID As Integer = Convert.ToInt32(ComboBox_Categories.SelectedValue)
+
+        ' ล้างข้อมูล SubCategory ก่อน
+        ComboBox_SubCategories.DataSource = Nothing
+
+        ' โหลดข้อมูล SubCategory ตาม Category ที่เลือก
+        LoadComboBoxData(ComboBox_SubCategories, ConnectionString, "SELECT SubCategoryID, SubCategoryName FROM SubCategories WHERE CategoryID = '" & CategoryID & "'", "SubCategoryName", "SubCategoryID")
     End Sub
 
     Private Sub load_Items()
@@ -156,5 +185,4 @@ Public Class usercon_find_equipment
             End If
         Next
     End Sub
-
 End Class

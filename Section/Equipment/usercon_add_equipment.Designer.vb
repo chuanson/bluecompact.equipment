@@ -28,7 +28,8 @@ Partial Class usercon_add_equipment
         Dim Padding6 As DevComponents.DotNetBar.SuperGrid.Style.Padding = New DevComponents.DotNetBar.SuperGrid.Style.Padding()
         Dim Background4 As DevComponents.DotNetBar.SuperGrid.Style.Background = New DevComponents.DotNetBar.SuperGrid.Style.Background()
         Me.SuperGridView_RecentCreate = New DevComponents.DotNetBar.SuperGrid.SuperGridControl()
-        Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
+        Me.Panel_Main = New DevComponents.DotNetBar.PanelEx()
+        Me.CheckBox_CreateAndStockIn = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.Button_FormReset = New DevComponents.DotNetBar.ButtonX()
         Me.Button_ItemCreate = New DevComponents.DotNetBar.ButtonX()
         Me.Button_PictureModify = New DevComponents.DotNetBar.ButtonX()
@@ -46,24 +47,24 @@ Partial Class usercon_add_equipment
         Me.TextBox_ItemCode = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.ComboBox_Model = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ComboBox_Brand = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX8 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX11 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX10 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX13 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX9 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX12 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX7 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
+        Me.Label_Brand = New DevComponents.DotNetBar.LabelX()
+        Me.Label_ItemName = New DevComponents.DotNetBar.LabelX()
+        Me.Label_Measurement = New DevComponents.DotNetBar.LabelX()
+        Me.Label_StandardCode = New DevComponents.DotNetBar.LabelX()
+        Me.Label_QuantityUnit = New DevComponents.DotNetBar.LabelX()
+        Me.Label_Remark = New DevComponents.DotNetBar.LabelX()
+        Me.Label_MaterialType = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX_Barcode = New DevComponents.DotNetBar.LabelX()
+        Me.Label_Categories = New DevComponents.DotNetBar.LabelX()
+        Me.Label_ItemCode = New DevComponents.DotNetBar.LabelX()
         Me.ComboBox_MeasurementUnit = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ComboBox_StandardCode = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ComboBox_QuantityUnit = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ComboBox_MaterialType = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ComboBox_Categories = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ComboBox_SubCategories = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.PanelEx1.SuspendLayout()
+        Me.Label_SubCategories = New DevComponents.DotNetBar.LabelX()
+        Me.Panel_Main.SuspendLayout()
         Me.panel_Picture.SuspendLayout()
         CType(Me.PictureBox_ItemPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoubleInput_MeasurementValue, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,55 +156,70 @@ Partial Class usercon_add_equipment
         Me.SuperGridView_RecentCreate.Size = New System.Drawing.Size(1225, 504)
         Me.SuperGridView_RecentCreate.TabIndex = 17
         '
-        'PanelEx1
+        'Panel_Main
         '
-        Me.PanelEx1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Panel_Main.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PanelEx1.CanvasColor = System.Drawing.Color.Empty
-        Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx1.Controls.Add(Me.Button_FormReset)
-        Me.PanelEx1.Controls.Add(Me.Button_ItemCreate)
-        Me.PanelEx1.Controls.Add(Me.Button_PictureModify)
-        Me.PanelEx1.Controls.Add(Me.panel_Picture)
-        Me.PanelEx1.Controls.Add(Me.RichTextBox_Remark)
-        Me.PanelEx1.Controls.Add(Me.DoubleInput_MeasurementValue)
-        Me.PanelEx1.Controls.Add(Me.Line2)
-        Me.PanelEx1.Controls.Add(Me.Line1)
-        Me.PanelEx1.Controls.Add(Me.TextBox_ItemName)
-        Me.PanelEx1.Controls.Add(Me.TextBox_Barcode)
-        Me.PanelEx1.Controls.Add(Me.TextBox_ItemCode)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_Model)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_Brand)
-        Me.PanelEx1.Controls.Add(Me.LabelX2)
-        Me.PanelEx1.Controls.Add(Me.LabelX8)
-        Me.PanelEx1.Controls.Add(Me.LabelX11)
-        Me.PanelEx1.Controls.Add(Me.LabelX3)
-        Me.PanelEx1.Controls.Add(Me.LabelX10)
-        Me.PanelEx1.Controls.Add(Me.LabelX13)
-        Me.PanelEx1.Controls.Add(Me.LabelX9)
-        Me.PanelEx1.Controls.Add(Me.LabelX12)
-        Me.PanelEx1.Controls.Add(Me.LabelX7)
-        Me.PanelEx1.Controls.Add(Me.LabelX4)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_MeasurementUnit)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_StandardCode)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_QuantityUnit)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_MaterialType)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_Categories)
-        Me.PanelEx1.Controls.Add(Me.ComboBox_SubCategories)
-        Me.PanelEx1.Controls.Add(Me.LabelX1)
-        Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
-        Me.PanelEx1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.PanelEx1.Location = New System.Drawing.Point(6, 6)
-        Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Padding = New System.Windows.Forms.Padding(8)
-        Me.PanelEx1.Size = New System.Drawing.Size(1225, 259)
-        Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
-        Me.PanelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.PanelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
-        Me.PanelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
-        Me.PanelEx1.Style.GradientAngle = 90
-        Me.PanelEx1.TabIndex = 14
+        Me.Panel_Main.CanvasColor = System.Drawing.Color.Empty
+        Me.Panel_Main.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.Panel_Main.Controls.Add(Me.CheckBox_CreateAndStockIn)
+        Me.Panel_Main.Controls.Add(Me.Button_FormReset)
+        Me.Panel_Main.Controls.Add(Me.Button_ItemCreate)
+        Me.Panel_Main.Controls.Add(Me.Button_PictureModify)
+        Me.Panel_Main.Controls.Add(Me.panel_Picture)
+        Me.Panel_Main.Controls.Add(Me.RichTextBox_Remark)
+        Me.Panel_Main.Controls.Add(Me.DoubleInput_MeasurementValue)
+        Me.Panel_Main.Controls.Add(Me.Line2)
+        Me.Panel_Main.Controls.Add(Me.Line1)
+        Me.Panel_Main.Controls.Add(Me.TextBox_ItemName)
+        Me.Panel_Main.Controls.Add(Me.TextBox_Barcode)
+        Me.Panel_Main.Controls.Add(Me.TextBox_ItemCode)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_Model)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_Brand)
+        Me.Panel_Main.Controls.Add(Me.Label_Brand)
+        Me.Panel_Main.Controls.Add(Me.Label_ItemName)
+        Me.Panel_Main.Controls.Add(Me.Label_Measurement)
+        Me.Panel_Main.Controls.Add(Me.Label_StandardCode)
+        Me.Panel_Main.Controls.Add(Me.Label_QuantityUnit)
+        Me.Panel_Main.Controls.Add(Me.Label_Remark)
+        Me.Panel_Main.Controls.Add(Me.Label_MaterialType)
+        Me.Panel_Main.Controls.Add(Me.LabelX_Barcode)
+        Me.Panel_Main.Controls.Add(Me.Label_Categories)
+        Me.Panel_Main.Controls.Add(Me.Label_ItemCode)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_MeasurementUnit)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_StandardCode)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_QuantityUnit)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_MaterialType)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_Categories)
+        Me.Panel_Main.Controls.Add(Me.ComboBox_SubCategories)
+        Me.Panel_Main.Controls.Add(Me.Label_SubCategories)
+        Me.Panel_Main.DisabledBackColor = System.Drawing.Color.Empty
+        Me.Panel_Main.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Panel_Main.Location = New System.Drawing.Point(6, 6)
+        Me.Panel_Main.Name = "Panel_Main"
+        Me.Panel_Main.Padding = New System.Windows.Forms.Padding(8)
+        Me.Panel_Main.Size = New System.Drawing.Size(1225, 259)
+        Me.Panel_Main.Style.Alignment = System.Drawing.StringAlignment.Center
+        Me.Panel_Main.Style.BackColor1.Color = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Panel_Main.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
+        Me.Panel_Main.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
+        Me.Panel_Main.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
+        Me.Panel_Main.Style.GradientAngle = 90
+        Me.Panel_Main.TabIndex = 14
+        '
+        'CheckBox_CreateAndStockIn
+        '
+        Me.CheckBox_CreateAndStockIn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        '
+        '
+        '
+        Me.CheckBox_CreateAndStockIn.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.CheckBox_CreateAndStockIn.Location = New System.Drawing.Point(978, 225)
+        Me.CheckBox_CreateAndStockIn.Name = "CheckBox_CreateAndStockIn"
+        Me.CheckBox_CreateAndStockIn.Size = New System.Drawing.Size(100, 23)
+        Me.CheckBox_CreateAndStockIn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.CheckBox_CreateAndStockIn.TabIndex = 34
+        Me.CheckBox_CreateAndStockIn.Text = "สร้างและรับเข้า"
         '
         'Button_FormReset
         '
@@ -234,7 +250,7 @@ Partial Class usercon_add_equipment
         Me.Button_PictureModify.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.Button_PictureModify.AutoExpandOnClick = True
         Me.Button_PictureModify.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.Button_PictureModify.Location = New System.Drawing.Point(895, 224)
+        Me.Button_PictureModify.Location = New System.Drawing.Point(810, 224)
         Me.Button_PictureModify.Name = "Button_PictureModify"
         Me.Button_PictureModify.Size = New System.Drawing.Size(157, 23)
         Me.Button_PictureModify.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -265,7 +281,7 @@ Partial Class usercon_add_equipment
         Me.panel_Picture.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.panel_Picture.Controls.Add(Me.PictureBox_ItemPicture)
         Me.panel_Picture.DisabledBackColor = System.Drawing.Color.Empty
-        Me.panel_Picture.Location = New System.Drawing.Point(894, 59)
+        Me.panel_Picture.Location = New System.Drawing.Point(809, 59)
         Me.panel_Picture.Name = "panel_Picture"
         Me.panel_Picture.Padding = New System.Windows.Forms.Padding(1)
         Me.panel_Picture.Size = New System.Drawing.Size(159, 159)
@@ -294,10 +310,10 @@ Partial Class usercon_add_equipment
         '
         Me.RichTextBox_Remark.BackgroundStyle.Class = "RichTextBoxBorder"
         Me.RichTextBox_Remark.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RichTextBox_Remark.Location = New System.Drawing.Point(536, 146)
+        Me.RichTextBox_Remark.Location = New System.Drawing.Point(492, 144)
         Me.RichTextBox_Remark.Name = "RichTextBox_Remark"
         Me.RichTextBox_Remark.Rtf = "{\rtf1\ansi\ansicpg874\deff0\deflang1054{\fonttbl{\f0\fnil\fcharset222 Tahoma;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\f0\fs18\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.RichTextBox_Remark.Size = New System.Drawing.Size(346, 102)
+        Me.RichTextBox_Remark.Size = New System.Drawing.Size(300, 102)
         Me.RichTextBox_Remark.TabIndex = 13
         '
         'DoubleInput_MeasurementValue
@@ -310,10 +326,10 @@ Partial Class usercon_add_equipment
         Me.DoubleInput_MeasurementValue.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.DoubleInput_MeasurementValue.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.DoubleInput_MeasurementValue.Increment = 1.0R
-        Me.DoubleInput_MeasurementValue.Location = New System.Drawing.Point(114, 174)
+        Me.DoubleInput_MeasurementValue.Location = New System.Drawing.Point(114, 145)
         Me.DoubleInput_MeasurementValue.Name = "DoubleInput_MeasurementValue"
         Me.DoubleInput_MeasurementValue.ShowUpDown = True
-        Me.DoubleInput_MeasurementValue.Size = New System.Drawing.Size(172, 22)
+        Me.DoubleInput_MeasurementValue.Size = New System.Drawing.Size(178, 22)
         Me.DoubleInput_MeasurementValue.TabIndex = 6
         Me.DoubleInput_MeasurementValue.WatermarkText = "ระบุขนาด"
         '
@@ -322,16 +338,18 @@ Partial Class usercon_add_equipment
         Me.Line2.ForeColor = System.Drawing.Color.LightGray
         Me.Line2.Location = New System.Drawing.Point(114, 202)
         Me.Line2.Name = "Line2"
-        Me.Line2.Size = New System.Drawing.Size(346, 17)
+        Me.Line2.Size = New System.Drawing.Size(300, 17)
         Me.Line2.TabIndex = 24
         Me.Line2.Text = "Line1"
         '
         'Line1
         '
+        Me.Line1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Line1.ForeColor = System.Drawing.Color.LightGray
-        Me.Line1.Location = New System.Drawing.Point(114, 39)
+        Me.Line1.Location = New System.Drawing.Point(12, 39)
         Me.Line1.Name = "Line1"
-        Me.Line1.Size = New System.Drawing.Size(768, 16)
+        Me.Line1.Size = New System.Drawing.Size(1202, 16)
         Me.Line1.TabIndex = 24
         Me.Line1.Text = "Line1"
         '
@@ -348,7 +366,7 @@ Partial Class usercon_add_equipment
         Me.TextBox_ItemName.Location = New System.Drawing.Point(114, 59)
         Me.TextBox_ItemName.Name = "TextBox_ItemName"
         Me.TextBox_ItemName.PreventEnterBeep = True
-        Me.TextBox_ItemName.Size = New System.Drawing.Size(346, 22)
+        Me.TextBox_ItemName.Size = New System.Drawing.Size(300, 22)
         Me.TextBox_ItemName.TabIndex = 2
         Me.TextBox_ItemName.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
         Me.TextBox_ItemName.WatermarkText = "ระบุชื่อรายการ"
@@ -366,7 +384,7 @@ Partial Class usercon_add_equipment
         Me.TextBox_Barcode.Location = New System.Drawing.Point(114, 225)
         Me.TextBox_Barcode.Name = "TextBox_Barcode"
         Me.TextBox_Barcode.PreventEnterBeep = True
-        Me.TextBox_Barcode.Size = New System.Drawing.Size(346, 22)
+        Me.TextBox_Barcode.Size = New System.Drawing.Size(300, 22)
         Me.TextBox_Barcode.TabIndex = 8
         Me.TextBox_Barcode.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
         Me.TextBox_Barcode.WatermarkText = "ระบุรหัสบาร์โค้ด"
@@ -385,7 +403,7 @@ Partial Class usercon_add_equipment
         Me.TextBox_ItemCode.Name = "TextBox_ItemCode"
         Me.TextBox_ItemCode.PreventEnterBeep = True
         Me.TextBox_ItemCode.ReadOnly = True
-        Me.TextBox_ItemCode.Size = New System.Drawing.Size(346, 22)
+        Me.TextBox_ItemCode.Size = New System.Drawing.Size(300, 22)
         Me.TextBox_ItemCode.TabIndex = 1
         '
         'ComboBox_Model
@@ -396,9 +414,9 @@ Partial Class usercon_add_equipment
         Me.ComboBox_Model.ForeColor = System.Drawing.Color.Black
         Me.ComboBox_Model.FormattingEnabled = True
         Me.ComboBox_Model.ItemHeight = 17
-        Me.ComboBox_Model.Location = New System.Drawing.Point(714, 117)
+        Me.ComboBox_Model.Location = New System.Drawing.Point(659, 115)
         Me.ComboBox_Model.Name = "ComboBox_Model"
-        Me.ComboBox_Model.Size = New System.Drawing.Size(168, 23)
+        Me.ComboBox_Model.Size = New System.Drawing.Size(133, 23)
         Me.ComboBox_Model.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_Model.TabIndex = 12
         Me.ComboBox_Model.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
@@ -412,153 +430,153 @@ Partial Class usercon_add_equipment
         Me.ComboBox_Brand.ForeColor = System.Drawing.Color.Black
         Me.ComboBox_Brand.FormattingEnabled = True
         Me.ComboBox_Brand.ItemHeight = 17
-        Me.ComboBox_Brand.Location = New System.Drawing.Point(536, 117)
+        Me.ComboBox_Brand.Location = New System.Drawing.Point(492, 115)
         Me.ComboBox_Brand.Name = "ComboBox_Brand"
-        Me.ComboBox_Brand.Size = New System.Drawing.Size(172, 23)
+        Me.ComboBox_Brand.Size = New System.Drawing.Size(161, 23)
         Me.ComboBox_Brand.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_Brand.TabIndex = 11
         Me.ComboBox_Brand.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
         Me.ComboBox_Brand.WatermarkText = "ระบุยี่ห้อ"
         '
-        'LabelX2
+        'Label_Brand
         '
-        Me.LabelX2.AutoSize = True
-        '
-        '
-        '
-        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Location = New System.Drawing.Point(472, 119)
-        Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX2.Size = New System.Drawing.Size(50, 17)
-        Me.LabelX2.TabIndex = 16
-        Me.LabelX2.Text = "ยี่ห้อ/รุ่น :"
-        '
-        'LabelX8
-        '
-        Me.LabelX8.AutoSize = True
+        Me.Label_Brand.AutoSize = True
         '
         '
         '
-        Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX8.Location = New System.Drawing.Point(12, 61)
-        Me.LabelX8.Name = "LabelX8"
-        Me.LabelX8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX8.Size = New System.Drawing.Size(61, 17)
-        Me.LabelX8.TabIndex = 18
-        Me.LabelX8.Text = "ชื่อรายการ :"
+        Me.Label_Brand.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_Brand.Location = New System.Drawing.Point(428, 117)
+        Me.Label_Brand.Name = "Label_Brand"
+        Me.Label_Brand.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_Brand.Size = New System.Drawing.Size(50, 17)
+        Me.Label_Brand.TabIndex = 16
+        Me.Label_Brand.Text = "ยี่ห้อ/รุ่น :"
         '
-        'LabelX11
+        'Label_ItemName
         '
-        Me.LabelX11.AutoSize = True
-        '
-        '
-        '
-        Me.LabelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX11.Location = New System.Drawing.Point(12, 177)
-        Me.LabelX11.Name = "LabelX11"
-        Me.LabelX11.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX11.Size = New System.Drawing.Size(84, 17)
-        Me.LabelX11.TabIndex = 18
-        Me.LabelX11.Text = "ขนาด/หน่วยวัด :"
-        '
-        'LabelX3
-        '
-        Me.LabelX3.AutoSize = True
+        Me.Label_ItemName.AutoSize = True
         '
         '
         '
-        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX3.Location = New System.Drawing.Point(12, 148)
-        Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX3.Size = New System.Drawing.Size(56, 17)
-        Me.LabelX3.TabIndex = 18
-        Me.LabelX3.Text = "มาตรฐาน :"
+        Me.Label_ItemName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_ItemName.Location = New System.Drawing.Point(12, 61)
+        Me.Label_ItemName.Name = "Label_ItemName"
+        Me.Label_ItemName.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_ItemName.Size = New System.Drawing.Size(61, 17)
+        Me.Label_ItemName.TabIndex = 18
+        Me.Label_ItemName.Text = "ชื่อรายการ :"
         '
-        'LabelX10
+        'Label_Measurement
         '
-        Me.LabelX10.AutoSize = True
-        '
-        '
-        '
-        Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX10.Location = New System.Drawing.Point(472, 90)
-        Me.LabelX10.Name = "LabelX10"
-        Me.LabelX10.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX10.Size = New System.Drawing.Size(54, 17)
-        Me.LabelX10.TabIndex = 18
-        Me.LabelX10.Text = "หน่วยนับ :"
-        '
-        'LabelX13
-        '
-        Me.LabelX13.AutoSize = True
+        Me.Label_Measurement.AutoSize = True
         '
         '
         '
-        Me.LabelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX13.Location = New System.Drawing.Point(472, 148)
-        Me.LabelX13.Name = "LabelX13"
-        Me.LabelX13.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX13.Size = New System.Drawing.Size(58, 17)
-        Me.LabelX13.TabIndex = 18
-        Me.LabelX13.Text = "หมายเหตุ :"
+        Me.Label_Measurement.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_Measurement.Location = New System.Drawing.Point(12, 148)
+        Me.Label_Measurement.Name = "Label_Measurement"
+        Me.Label_Measurement.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_Measurement.Size = New System.Drawing.Size(84, 17)
+        Me.Label_Measurement.TabIndex = 18
+        Me.Label_Measurement.Text = "ขนาด/หน่วยวัด :"
         '
-        'LabelX9
+        'Label_StandardCode
         '
-        Me.LabelX9.AutoSize = True
-        '
-        '
-        '
-        Me.LabelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX9.Location = New System.Drawing.Point(472, 61)
-        Me.LabelX9.Name = "LabelX9"
-        Me.LabelX9.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX9.Size = New System.Drawing.Size(31, 17)
-        Me.LabelX9.TabIndex = 18
-        Me.LabelX9.Text = "วัสดุ :"
-        '
-        'LabelX12
-        '
-        Me.LabelX12.AutoSize = True
+        Me.Label_StandardCode.AutoSize = True
         '
         '
         '
-        Me.LabelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX12.Location = New System.Drawing.Point(12, 227)
-        Me.LabelX12.Name = "LabelX12"
-        Me.LabelX12.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX12.Size = New System.Drawing.Size(70, 17)
-        Me.LabelX12.TabIndex = 18
-        Me.LabelX12.Text = "รหัสบาร์โค้ด :"
+        Me.Label_StandardCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_StandardCode.Location = New System.Drawing.Point(428, 60)
+        Me.Label_StandardCode.Name = "Label_StandardCode"
+        Me.Label_StandardCode.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_StandardCode.Size = New System.Drawing.Size(56, 17)
+        Me.Label_StandardCode.TabIndex = 18
+        Me.Label_StandardCode.Text = "มาตรฐาน :"
         '
-        'LabelX7
+        'Label_QuantityUnit
         '
-        Me.LabelX7.AutoSize = True
-        '
-        '
-        '
-        Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX7.Location = New System.Drawing.Point(12, 90)
-        Me.LabelX7.Name = "LabelX7"
-        Me.LabelX7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX7.Size = New System.Drawing.Size(77, 17)
-        Me.LabelX7.TabIndex = 18
-        Me.LabelX7.Text = "หมวดหมู่หลัก :"
-        '
-        'LabelX4
-        '
-        Me.LabelX4.AutoSize = True
+        Me.Label_QuantityUnit.AutoSize = True
         '
         '
         '
-        Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX4.Location = New System.Drawing.Point(12, 13)
-        Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX4.Size = New System.Drawing.Size(67, 17)
-        Me.LabelX4.TabIndex = 18
-        Me.LabelX4.Text = "รหัสรายการ :"
+        Me.Label_QuantityUnit.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_QuantityUnit.Location = New System.Drawing.Point(428, 88)
+        Me.Label_QuantityUnit.Name = "Label_QuantityUnit"
+        Me.Label_QuantityUnit.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_QuantityUnit.Size = New System.Drawing.Size(54, 17)
+        Me.Label_QuantityUnit.TabIndex = 18
+        Me.Label_QuantityUnit.Text = "หน่วยนับ :"
+        '
+        'Label_Remark
+        '
+        Me.Label_Remark.AutoSize = True
+        '
+        '
+        '
+        Me.Label_Remark.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_Remark.Location = New System.Drawing.Point(428, 146)
+        Me.Label_Remark.Name = "Label_Remark"
+        Me.Label_Remark.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_Remark.Size = New System.Drawing.Size(58, 17)
+        Me.Label_Remark.TabIndex = 18
+        Me.Label_Remark.Text = "หมายเหตุ :"
+        '
+        'Label_MaterialType
+        '
+        Me.Label_MaterialType.AutoSize = True
+        '
+        '
+        '
+        Me.Label_MaterialType.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_MaterialType.Location = New System.Drawing.Point(12, 174)
+        Me.Label_MaterialType.Name = "Label_MaterialType"
+        Me.Label_MaterialType.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_MaterialType.Size = New System.Drawing.Size(31, 17)
+        Me.Label_MaterialType.TabIndex = 18
+        Me.Label_MaterialType.Text = "วัสดุ :"
+        '
+        'LabelX_Barcode
+        '
+        Me.LabelX_Barcode.AutoSize = True
+        '
+        '
+        '
+        Me.LabelX_Barcode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX_Barcode.Location = New System.Drawing.Point(12, 227)
+        Me.LabelX_Barcode.Name = "LabelX_Barcode"
+        Me.LabelX_Barcode.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LabelX_Barcode.Size = New System.Drawing.Size(70, 17)
+        Me.LabelX_Barcode.TabIndex = 18
+        Me.LabelX_Barcode.Text = "รหัสบาร์โค้ด :"
+        '
+        'Label_Categories
+        '
+        Me.Label_Categories.AutoSize = True
+        '
+        '
+        '
+        Me.Label_Categories.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_Categories.Location = New System.Drawing.Point(12, 90)
+        Me.Label_Categories.Name = "Label_Categories"
+        Me.Label_Categories.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_Categories.Size = New System.Drawing.Size(77, 17)
+        Me.Label_Categories.TabIndex = 18
+        Me.Label_Categories.Text = "หมวดหมู่หลัก :"
+        '
+        'Label_ItemCode
+        '
+        Me.Label_ItemCode.AutoSize = True
+        '
+        '
+        '
+        Me.Label_ItemCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_ItemCode.Location = New System.Drawing.Point(12, 13)
+        Me.Label_ItemCode.Name = "Label_ItemCode"
+        Me.Label_ItemCode.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_ItemCode.Size = New System.Drawing.Size(67, 17)
+        Me.Label_ItemCode.TabIndex = 18
+        Me.Label_ItemCode.Text = "รหัสรายการ :"
         '
         'ComboBox_MeasurementUnit
         '
@@ -568,9 +586,9 @@ Partial Class usercon_add_equipment
         Me.ComboBox_MeasurementUnit.ForeColor = System.Drawing.Color.Black
         Me.ComboBox_MeasurementUnit.FormattingEnabled = True
         Me.ComboBox_MeasurementUnit.ItemHeight = 17
-        Me.ComboBox_MeasurementUnit.Location = New System.Drawing.Point(292, 174)
+        Me.ComboBox_MeasurementUnit.Location = New System.Drawing.Point(298, 145)
         Me.ComboBox_MeasurementUnit.Name = "ComboBox_MeasurementUnit"
-        Me.ComboBox_MeasurementUnit.Size = New System.Drawing.Size(168, 23)
+        Me.ComboBox_MeasurementUnit.Size = New System.Drawing.Size(116, 23)
         Me.ComboBox_MeasurementUnit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_MeasurementUnit.TabIndex = 7
         Me.ComboBox_MeasurementUnit.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
@@ -584,9 +602,9 @@ Partial Class usercon_add_equipment
         Me.ComboBox_StandardCode.ForeColor = System.Drawing.Color.Black
         Me.ComboBox_StandardCode.FormattingEnabled = True
         Me.ComboBox_StandardCode.ItemHeight = 17
-        Me.ComboBox_StandardCode.Location = New System.Drawing.Point(114, 145)
+        Me.ComboBox_StandardCode.Location = New System.Drawing.Point(492, 58)
         Me.ComboBox_StandardCode.Name = "ComboBox_StandardCode"
-        Me.ComboBox_StandardCode.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_StandardCode.Size = New System.Drawing.Size(300, 23)
         Me.ComboBox_StandardCode.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_StandardCode.TabIndex = 5
         Me.ComboBox_StandardCode.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
@@ -600,9 +618,9 @@ Partial Class usercon_add_equipment
         Me.ComboBox_QuantityUnit.ForeColor = System.Drawing.Color.Black
         Me.ComboBox_QuantityUnit.FormattingEnabled = True
         Me.ComboBox_QuantityUnit.ItemHeight = 17
-        Me.ComboBox_QuantityUnit.Location = New System.Drawing.Point(536, 88)
+        Me.ComboBox_QuantityUnit.Location = New System.Drawing.Point(492, 86)
         Me.ComboBox_QuantityUnit.Name = "ComboBox_QuantityUnit"
-        Me.ComboBox_QuantityUnit.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_QuantityUnit.Size = New System.Drawing.Size(300, 23)
         Me.ComboBox_QuantityUnit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_QuantityUnit.TabIndex = 10
         Me.ComboBox_QuantityUnit.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
@@ -616,9 +634,9 @@ Partial Class usercon_add_equipment
         Me.ComboBox_MaterialType.ForeColor = System.Drawing.Color.Black
         Me.ComboBox_MaterialType.FormattingEnabled = True
         Me.ComboBox_MaterialType.ItemHeight = 17
-        Me.ComboBox_MaterialType.Location = New System.Drawing.Point(536, 59)
+        Me.ComboBox_MaterialType.Location = New System.Drawing.Point(114, 174)
         Me.ComboBox_MaterialType.Name = "ComboBox_MaterialType"
-        Me.ComboBox_MaterialType.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_MaterialType.Size = New System.Drawing.Size(300, 23)
         Me.ComboBox_MaterialType.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_MaterialType.TabIndex = 9
         Me.ComboBox_MaterialType.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
@@ -634,11 +652,11 @@ Partial Class usercon_add_equipment
         Me.ComboBox_Categories.ItemHeight = 17
         Me.ComboBox_Categories.Location = New System.Drawing.Point(114, 87)
         Me.ComboBox_Categories.Name = "ComboBox_Categories"
-        Me.ComboBox_Categories.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_Categories.Size = New System.Drawing.Size(300, 23)
         Me.ComboBox_Categories.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_Categories.TabIndex = 3
         Me.ComboBox_Categories.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
-        Me.ComboBox_Categories.WatermarkText = "ระบุหมวดหมู่รายการ (จำเป็นต้องระบุ)"
+        Me.ComboBox_Categories.WatermarkText = "ระบุหมวดหมู่รายการ"
         '
         'ComboBox_SubCategories
         '
@@ -650,38 +668,38 @@ Partial Class usercon_add_equipment
         Me.ComboBox_SubCategories.ItemHeight = 17
         Me.ComboBox_SubCategories.Location = New System.Drawing.Point(114, 116)
         Me.ComboBox_SubCategories.Name = "ComboBox_SubCategories"
-        Me.ComboBox_SubCategories.Size = New System.Drawing.Size(346, 23)
+        Me.ComboBox_SubCategories.Size = New System.Drawing.Size(300, 23)
         Me.ComboBox_SubCategories.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ComboBox_SubCategories.TabIndex = 4
         Me.ComboBox_SubCategories.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty
         Me.ComboBox_SubCategories.WatermarkText = "ระบุหมวดหมู่ย่อย"
         '
-        'LabelX1
+        'Label_SubCategories
         '
-        Me.LabelX1.AutoSize = True
+        Me.Label_SubCategories.AutoSize = True
         '
         '
         '
-        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Location = New System.Drawing.Point(12, 119)
-        Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LabelX1.Size = New System.Drawing.Size(75, 17)
-        Me.LabelX1.TabIndex = 19
-        Me.LabelX1.Text = "หมวดหมู่ย่อย :"
+        Me.Label_SubCategories.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.Label_SubCategories.Location = New System.Drawing.Point(12, 119)
+        Me.Label_SubCategories.Name = "Label_SubCategories"
+        Me.Label_SubCategories.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label_SubCategories.Size = New System.Drawing.Size(75, 17)
+        Me.Label_SubCategories.TabIndex = 19
+        Me.Label_SubCategories.Text = "หมวดหมู่ย่อย :"
         '
         'usercon_add_equipment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.Controls.Add(Me.PanelEx1)
+        Me.Controls.Add(Me.Panel_Main)
         Me.Controls.Add(Me.SuperGridView_RecentCreate)
         Me.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Name = "usercon_add_equipment"
         Me.Padding = New System.Windows.Forms.Padding(3)
         Me.Size = New System.Drawing.Size(1237, 781)
-        Me.PanelEx1.ResumeLayout(False)
-        Me.PanelEx1.PerformLayout()
+        Me.Panel_Main.ResumeLayout(False)
+        Me.Panel_Main.PerformLayout()
         Me.panel_Picture.ResumeLayout(False)
         CType(Me.PictureBox_ItemPicture, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoubleInput_MeasurementValue, System.ComponentModel.ISupportInitialize).EndInit()
@@ -689,32 +707,32 @@ Partial Class usercon_add_equipment
 
     End Sub
     Friend WithEvents SuperGridView_RecentCreate As DevComponents.DotNetBar.SuperGrid.SuperGridControl
-    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
+    Friend WithEvents Panel_Main As DevComponents.DotNetBar.PanelEx
     Friend WithEvents Line1 As DevComponents.DotNetBar.Controls.Line
     Friend WithEvents TextBox_ItemCode As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents ComboBox_Model As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents ComboBox_Brand As DevComponents.DotNetBar.Controls.ComboBoxEx
-    Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX4 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_Brand As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_ItemCode As DevComponents.DotNetBar.LabelX
     Friend WithEvents ComboBox_SubCategories As DevComponents.DotNetBar.Controls.ComboBoxEx
-    Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX7 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_SubCategories As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_Categories As DevComponents.DotNetBar.LabelX
     Friend WithEvents ComboBox_Categories As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents TextBox_ItemName As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents LabelX8 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX11 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX10 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX9 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_ItemName As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_Measurement As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_QuantityUnit As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_MaterialType As DevComponents.DotNetBar.LabelX
     Friend WithEvents ComboBox_MeasurementUnit As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents ComboBox_QuantityUnit As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents ComboBox_MaterialType As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents DoubleInput_MeasurementValue As DevComponents.Editors.DoubleInput
-    Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_StandardCode As DevComponents.DotNetBar.LabelX
     Friend WithEvents ComboBox_StandardCode As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents Line2 As DevComponents.DotNetBar.Controls.Line
     Friend WithEvents TextBox_Barcode As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents LabelX13 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX12 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents Label_Remark As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX_Barcode As DevComponents.DotNetBar.LabelX
     Friend WithEvents RichTextBox_Remark As DevComponents.DotNetBar.Controls.RichTextBoxEx
     Friend WithEvents panel_Picture As DevComponents.DotNetBar.PanelEx
     Friend WithEvents PictureBox_ItemPicture As System.Windows.Forms.PictureBox
@@ -724,5 +742,6 @@ Partial Class usercon_add_equipment
     Friend WithEvents ButtonItem_PictureChooseFile As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents ButtonItem_PictureCapture As DevComponents.DotNetBar.ButtonItem
     Friend WithEvents ButtonItem_PictureRemove As DevComponents.DotNetBar.ButtonItem
+    Friend WithEvents CheckBox_CreateAndStockIn As DevComponents.DotNetBar.Controls.CheckBoxX
 
 End Class

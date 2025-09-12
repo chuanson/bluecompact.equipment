@@ -122,7 +122,7 @@ Partial Class frm_Main
         Me.RibbonControl_Main.Name = "RibbonControl_Main"
         Me.RibbonControl_Main.QuickToolbarItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.Label_UserActive})
         Me.RibbonControl_Main.RibbonStripFont = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.RibbonControl_Main.Size = New System.Drawing.Size(1212, 170)
+        Me.RibbonControl_Main.Size = New System.Drawing.Size(1270, 170)
         Me.RibbonControl_Main.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonControl_Main.SystemText.MaximizeRibbonText = "&Maximize the Ribbon"
         Me.RibbonControl_Main.SystemText.MinimizeRibbonText = "Mi&nimize the Ribbon"
@@ -155,7 +155,7 @@ Partial Class frm_Main
         Me.RibbonPanel_Management.Location = New System.Drawing.Point(0, 53)
         Me.RibbonPanel_Management.Name = "RibbonPanel_Management"
         Me.RibbonPanel_Management.Padding = New System.Windows.Forms.Padding(3, 0, 3, 2)
-        Me.RibbonPanel_Management.Size = New System.Drawing.Size(1212, 117)
+        Me.RibbonPanel_Management.Size = New System.Drawing.Size(1270, 117)
         '
         '
         '
@@ -866,13 +866,13 @@ Partial Class frm_Main
         Me.bar_StatusInfo.IsMaximized = False
         Me.bar_StatusInfo.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.Label_VersionNumber, Me.Label_License, Me.Label_DatabaseName, Me.Label_DatabaseSize, Me.Label_Permission})
         Me.bar_StatusInfo.ItemSpacing = 10
-        Me.bar_StatusInfo.Location = New System.Drawing.Point(5, 598)
+        Me.bar_StatusInfo.Location = New System.Drawing.Point(5, 724)
         Me.bar_StatusInfo.Name = "bar_StatusInfo"
         Me.bar_StatusInfo.PaddingBottom = 2
         Me.bar_StatusInfo.PaddingLeft = 2
         Me.bar_StatusInfo.PaddingRight = 2
         Me.bar_StatusInfo.PaddingTop = 5
-        Me.bar_StatusInfo.Size = New System.Drawing.Size(1212, 24)
+        Me.bar_StatusInfo.Size = New System.Drawing.Size(1270, 24)
         Me.bar_StatusInfo.Stretch = True
         Me.bar_StatusInfo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.bar_StatusInfo.TabIndex = 12
@@ -921,7 +921,7 @@ Partial Class frm_Main
         Me.tabcontrol_Main.Name = "tabcontrol_Main"
         Me.tabcontrol_Main.SelectedTabFont = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold)
         Me.tabcontrol_Main.SelectedTabIndex = 0
-        Me.tabcontrol_Main.Size = New System.Drawing.Size(1212, 427)
+        Me.tabcontrol_Main.Size = New System.Drawing.Size(1270, 553)
         Me.tabcontrol_Main.Style = DevComponents.DotNetBar.eTabStripStyle.Metro
         Me.tabcontrol_Main.TabIndex = 14
         Me.tabcontrol_Main.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox
@@ -935,7 +935,7 @@ Partial Class frm_Main
         Me.TabControlPanel_Dashboard.Location = New System.Drawing.Point(0, 27)
         Me.TabControlPanel_Dashboard.Name = "TabControlPanel_Dashboard"
         Me.TabControlPanel_Dashboard.Padding = New System.Windows.Forms.Padding(1)
-        Me.TabControlPanel_Dashboard.Size = New System.Drawing.Size(1212, 400)
+        Me.TabControlPanel_Dashboard.Size = New System.Drawing.Size(1270, 526)
         Me.TabControlPanel_Dashboard.Style.BackColor1.Color = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.TabControlPanel_Dashboard.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.TabControlPanel_Dashboard.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(198, Byte), Integer))
@@ -955,12 +955,13 @@ Partial Class frm_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1222, 624)
+        Me.ClientSize = New System.Drawing.Size(1280, 750)
         Me.Controls.Add(Me.tabcontrol_Main)
         Me.Controls.Add(Me.bar_StatusInfo)
         Me.Controls.Add(Me.RibbonControl_Main)
         Me.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimumSize = New System.Drawing.Size(1280, 750)
         Me.Name = "frm_Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Equipment"

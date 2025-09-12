@@ -11,7 +11,7 @@ Module ComboBox_Module
         End Function
     End Class
 
-    Public Sub LoadComboBoxData(ByVal comboBox As ComboBox, ByVal ConnectionString As String, ByVal Query As String, ByVal displayField As String, ByVal valueField As String)
+    Public Sub LoadComboBoxData_WithNull(ByVal comboBox As ComboBox, ByVal ConnectionString As String, ByVal Query As String, ByVal displayField As String, ByVal valueField As String, ByVal nullText As String)
         Try
             Using connection As New SQLiteConnection(ConnectionString)
                 connection.Open()
@@ -22,9 +22,29 @@ Module ComboBox_Module
 
                 ' เพิ่มแถวว่างไว้ด้านบน
                 Dim newRow As DataRow = dt.NewRow()
-                newRow(displayField) = "ไม่ระบุ"
+                newRow(displayField) = nullText
                 newRow(valueField) = DBNull.Value
                 dt.Rows.InsertAt(newRow, 0)
+
+                comboBox.DisplayMember = displayField
+                comboBox.ValueMember = valueField
+                comboBox.DataSource = dt
+
+                comboBox.SelectedIndex = -1
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("เกิดข้อผิดพลาดในการโหลดข้อมูล: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Public Sub LoadComboBoxData(ByVal comboBox As ComboBox, ByVal ConnectionString As String, ByVal Query As String, ByVal displayField As String, ByVal valueField As String)
+        Try
+            Using connection As New SQLiteConnection(ConnectionString)
+                connection.Open()
+
+                Dim adapter As New SQLiteDataAdapter(Query, connection)
+                Dim dt As New DataTable()
+                adapter.Fill(dt)
 
                 comboBox.DisplayMember = displayField
                 comboBox.ValueMember = valueField

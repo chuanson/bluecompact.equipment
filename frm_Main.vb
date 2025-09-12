@@ -62,6 +62,8 @@ Public Class frm_Main
     Private Sub ButtonItem_AddItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem_AddItem.Click
         Dim UserControl As New usercon_add_equipment
         UserControl.ConnectionString = ConnectionString
+        WarehouseID = "1"
+        UserControl.WarehouseID = WarehouseID
         OpenNewTab(UserControl, "สร้างรายการใหม่")
     End Sub
 End Class
