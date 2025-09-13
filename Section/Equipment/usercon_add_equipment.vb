@@ -1,5 +1,7 @@
 ﻿Imports System.IO
 Imports System.Data.SQLite
+Imports ZXing
+Imports System.Text.RegularExpressions
 Imports DevComponents.DotNetBar
 Imports DevComponents.DotNetBar.Controls
 Imports DevComponents.DotNetBar.SuperGrid
@@ -72,8 +74,10 @@ Public Class usercon_add_equipment
                 reader.Close()
                 Dim new_EmpCode As String = "ITEM-" & (maxx + 1).ToString("0000000")
                 TextBox_ItemCode.Text = new_EmpCode
+                barcode_Module.GenerateBarcode_Warehouse(new_EmpCode, PictureBox_BarcodeWarehouse)
             Catch ex As Exception
                 TextBox_ItemCode.Text = "ITEM-0000001"
+                barcode_Module.GenerateBarcode_Warehouse("ITEM-0000001", PictureBox_BarcodeWarehouse)
             End Try
         End Using
     End Sub
@@ -102,7 +106,7 @@ Public Class usercon_add_equipment
             "MeasurementValue, " & _
             "MeasurementUnitID, " & _
             "StandardID, " & _
-            "Barcode, " & _
+            "BarcodePOS, " & _
             "Remark, " & _
             "ItemPicture) " & _
             "VALUES (" & _
@@ -117,7 +121,7 @@ Public Class usercon_add_equipment
             "@MeasurementValue, " & _
             "@MeasurementUnitID, " & _
             "@StandardID, " & _
-            "@Barcode, " & _
+            "@BarcodePOS, " & _
             "@Remark, " & _
             "@ItemPicture)"
 
@@ -136,7 +140,7 @@ Public Class usercon_add_equipment
                     Command.Parameters.Add("@MeasurementValue", DbType.Double).Value = DoubleInput_MeasurementValue.Value
                     Command.Parameters.Add("@MeasurementUnitID", DbType.String).Value = MeasurementUnitID
                     Command.Parameters.Add("@StandardID", DbType.String).Value = StandardID
-                    Command.Parameters.Add("@Barcode", DbType.String).Value = TextBox_Barcode.Text
+                    Command.Parameters.Add("@BarcodePOS", DbType.String).Value = TextBox_BarcodePOS.Text
                     Command.Parameters.Add("@Remark", DbType.String).Value = RichTextBox_Remark.Text
 
                     ' รูปภาพ
@@ -205,5 +209,57 @@ Public Class usercon_add_equipment
     Private Sub ButtonItem_PictureRemove_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem_PictureRemove.Click
         PictureBox_ItemPicture.Image = Nothing
         imageBytes = Nothing
+    End Sub
+
+    ' ฟังก์ชันคำนวณ Checksum ของ EAN-13
+    Private Function CalculateEAN13Checksum(ByVal code As String) As Integer
+        If code.Length <> 12 Then
+            Throw New ArgumentException("ต้องมี 12 หลัก")
+        End If
+
+        Dim sum As Integer = 0
+        For i As Integer = 0 To 11
+            Dim digit As Integer = Integer.Parse(code(i).ToString())
+            If (i Mod 2 = 0) Then
+                sum += digit
+            Else
+                sum += digit * 3
+            End If
+        Next
+        Dim checksum As Integer = (10 - (sum Mod 10)) Mod 10
+        Return checksum
+    End Function
+
+    ' จำกัดให้พิมพ์ได้ไม่เกิน 12 หลัก
+    Private Sub TextBox_BarcodePOS_KeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs) Handles TextBox_BarcodePOS.KeyPress
+        If Char.IsControl(e.KeyChar) Then
+            Return
+        End If
+
+        If Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+            Return
+        End If
+
+        ' จำกัดแค่ 12 หลัก (ยังไม่รวม checksum)
+        If TextBox_BarcodePOS.Text.Length >= 12 Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBox_Barcode_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox_BarcodePOS.TextChanged
+        Dim inputText As String = TextBox_BarcodePOS.Text.Trim()
+
+        If inputText.Length = 12 Then
+            Try
+                Dim checksum As Integer = CalculateEAN13Checksum(inputText)
+                TextBox_BarcodePOS.Text = inputText & checksum.ToString()
+                ' สร้าง Barcode EAN-13
+                barcode_Module.GenerateBarcode_POS(TextBox_BarcodePOS.Text, PictureBox_BarcodePOS)
+            Catch ex As Exception
+                PictureBox_BarcodePOS.Image = Nothing
+                Return
+            End Try
+        End If
     End Sub
 End Class

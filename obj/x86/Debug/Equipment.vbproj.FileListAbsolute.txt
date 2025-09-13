@@ -33,3 +33,7 @@ D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.exe
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.xml
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.pdb
 D:\Drive\Itme\Software\Project\bluecompact.equipment\obj\x86\Debug\Equipment.vbprojResolveAssemblyReference.cache
+D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\zxing.dll
+D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\zxing.presentation.dll
+D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\zxing.xml
+D:\Drive\Itme\Software\Project\bluecompact.equipment\bin\Debug\zxing.presentation.xml

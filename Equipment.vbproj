@@ -68,6 +68,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="zxing">
+      <HintPath>..\Addon\zxing.net.0.16.10_net40\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\Addon\zxing.net.0.16.10_net40\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -120,6 +126,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module\alert_Module.vb" />
+    <Compile Include="Module\barcode_Module.vb" />
     <Compile Include="Module\combobox_Module.vb" />
     <Compile Include="Module\datetime_Module.vb" />
     <Compile Include="Module\desktopalert_Module.vb" />
